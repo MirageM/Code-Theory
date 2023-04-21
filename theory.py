@@ -5,11 +5,17 @@ In Python, strip() and split() are string methods that operate on a string and r
 strip() is used to remove leading and trailing whitespace characters (spaces, tabs, newlines) from a string.
 It returns a new string with the leadering and trailing whitespace removed.
 '''
+# strip() method removes the leadering and trailing whitespace
+# from the string "  hello  \n"
 string_with_whitespace = "   hello    \n"
 stripped_string = string_with_whitespace.strip()
 print(stripped_string)
 
-
+'''
+split() is used to split a string into a list of substrings based on a specified delimiter character.
+By default, the delimiter is a space character
+But any character can be specified as the delimiter
+'''
 
 
 
