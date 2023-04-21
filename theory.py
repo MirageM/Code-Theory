@@ -14,3 +14,4 @@ print(myList)
 
 # Dictionaries
 myDictionary = {'name': 'John', 'age': 30, 'city': 'New York'}
+print(myDictionary)
