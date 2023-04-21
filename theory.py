@@ -6,3 +6,8 @@ Tuples make it useful for situations where the stored collection of items can't 
 myTuple = (1, 2, 3, 4, 5)
 print(myTuple)
 print(myTuple[0])
+myList = [1, 2, 3, 4, 5]
+print(myList)
+print(myList[0])
+myList[0] = 6
+print(myList)
