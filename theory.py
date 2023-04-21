@@ -11,3 +11,6 @@ print(myList)
 print(myList[0])
 myList[0] = 6
 print(myList)
+
+# Dictionaries
+myDictionary = {'name': 'John', 'age': 30, 'city': 'New York'}
