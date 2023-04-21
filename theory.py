@@ -16,7 +16,10 @@ split() is used to split a string into a list of substrings based on a specified
 By default, the delimiter is a space character
 But any character can be specified as the delimiter
 '''
-
+# split() method splits a string into a list of substrings
+sentence = "This is a sentence."
+words = sentence.split()
+print (words) # Output: ["This", "is", "a", "sentence"]
 
 
 
