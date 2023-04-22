@@ -13,6 +13,14 @@ def generate_excel_sheet(filename, data):
     # Save the workbook to a file
     workbook.save(filename)
 
+data = [
+    ["Name", "Age", "Gender"],
+    ["Alice", 25, "Female"],
+    ["Bob", 30, "Male"],
+    ["Charlie", 35, "Male"]
+]
+
+generate_excel_sheet("report.xlsx", data)
 
 
 '''
