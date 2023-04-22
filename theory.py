@@ -1,3 +1,20 @@
+def generate_excel_sheet(filename, data):
+    # Create a new workbook
+    workbook = openpyxl.Workbook()
+
+    # Select the new sheet
+    sheet = workbook.active
+    sheet.title = "Sheet Report"
+
+    # Write the data to the seet
+    for row in data:
+        sheet.append(row)
+
+    # Save the workbook to a file
+    workbook.save(filename)
+
+
+
 '''
 In Python, strip() and split() are string methods that operate on a string and return a modified version of it
 '''
