@@ -9,7 +9,13 @@ string = "hello world"
 upper_string = string.upper()
 print(upper_string) # Output: "HELLO WORLD"
 
-
+'''
+lower() is used to convert all the uppercase letters in a string to lowercase
+It returns a new string with all the uppercase letters replaced by their lowercase counterparts
+'''
+string = "HELLO WORLD"
+lower_string = string.lower()
+print(lower_string) # Output: "hello world"
 
 
 
