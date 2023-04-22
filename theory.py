@@ -1,3 +1,21 @@
+'''
+In Python, 'upper()' and 'lower()' are string methods used to convert the case of the letters in a string
+'''
+'''
+upper() is used to convert all the lowercase letters in a string to uppercase
+It returns  a new string with all the lowercase letters replaced by their uppercase counterparts.
+'''
+string = "hello world"
+upper_string = string.upper()
+print(upper_string) # Output: "HELLO WORLD"
+
+
+
+
+
+
+import openpyxl
+
 def generate_excel_sheet(filename, data):
     # Create a new workbook
     workbook = openpyxl.Workbook()
