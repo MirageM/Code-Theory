@@ -3,11 +3,17 @@ word = "Python"
 for letter in word:
     print(letter)
 
+# List are mutable
 # Loop through a list:
 numbers = [1, 2, 3, 4, 5]
 for num in numbers: 
     print(num)
 
+# Tuple are immutable
+# Loop through a tuple:
+numbers = (1, 2, 3, 4, 5)
+for num in numbers:
+    print(num)
 
 
 
