@@ -3,6 +3,10 @@ word = "Python"
 for letter in word:
     print(letter)
 
+# Loop through a list:
+numbers = [1, 2, 3, 4, 5]
+for num in numbers: 
+    print(num)
 
 
 
