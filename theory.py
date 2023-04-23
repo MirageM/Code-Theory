@@ -1,3 +1,26 @@
+''' In Python, dictionaries are mutable.
+This means that the contents of a dictionary can be changed after it has been created.
+For example, you can add, remove, or modify key-value pairs in a dictionary using various
+methods like update(), pop(), del, etc
+'''
+# Create a dictionary
+person = {"name": "Mirage", "age": 27}
+
+# Modify a key-value pair
+person["age"] = 24
+
+# Add a new key-value pair
+person["city"] = "New York"
+
+# Remove a key-value pair
+del person["age"]
+
+print(person)
+
+
+
+
+
 # Loop through a string:
 word = "Python"
 for letter in word:
