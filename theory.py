@@ -15,6 +15,11 @@ numbers = (1, 2, 3, 4, 5)
 for num in numbers:
     print(num)
 
+# Loop through a dictionary:
+person = {"name": "John", "age": 30, "city": "New York"}
+for key, value in person.items():
+    print(key + ":", value)
+
 
 
 
