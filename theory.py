@@ -15,12 +15,17 @@ numbers = (1, 2, 3, 4, 5)
 for num in numbers:
     print(num)
 
+# Dictionary are mutable
 # Loop through a dictionary:
 person = {"name": "John", "age": 30, "city": "New York"}
 for key, value in person.items():
     print(key + ":", value)
 
-
+# Loop through multiple lists at once using the zip() function:
+names = ["Alice", "Bob", "Charlie"]
+ages = [25, 30, 35]
+for name, age in zip(names, ages):
+    print(name, "is", age, "years old. ")
 
 
 
