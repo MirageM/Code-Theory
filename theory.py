@@ -1,3 +1,15 @@
+# Loop through a string:
+word = "Python"
+for letter in word:
+    print(letter)
+
+
+
+
+
+
+
+
 '''
 In Python, 'upper()' and 'lower()' are string methods used to convert the case of the letters in a string
 '''
