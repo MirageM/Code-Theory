@@ -9,10 +9,25 @@ if the file does not exist, Python will raise a FileNotFoundError
 The advantage of using a with statement is that it will automatically 
 close the file for you once you are done with it
 3. 'as file' - This line of code assigns the file object to the variable 'file'
-
-
-
+4. contents = file.read() - This line of code reads the entire contents of the file
+and stores it in the variable 'contents'
+5. print(contents) - This line of code prints the contents of the file to the console
 '''
+# Open a file for writing, appending, or in binary mode
+# Open a file for writing
+with open('output.txt', 'w') as file:
+    file.write('Hello, world!')
+
+# Open a file for appending
+with open('log.txt', 'a') as file:
+    file.write('An error occurred.')
+
+# Open a binary file
+with open('image.png', 'rb') as file:
+    data = file.read()
+
+
+
 
 ''' In Python, dictionaries are mutable.
 This means that the contents of a dictionary can be changed after it has been created.
