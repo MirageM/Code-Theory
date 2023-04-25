@@ -1,4 +1,45 @@
 '''
+Mutables -> Lists, Dictionaries, Sets (Can be changed)
+Immutable -> Tuples, Strings, Numbers (Cannot be changed)
+1. Dictionaries: A dictionary is a collection of key-value pairs. Each key is unique and is assocaited with a value. 
+Dictionaries are mutable, which means their contents can be changed after they are created.
+2. Tuples: A tuple is an immutable collection of ordered elemnts. Tuples are similair to lists, but
+they cannot be modified once they are created.
+3. Sets: A set is a collection of unique elements. Sets are mutable and can be modified after they are created.
+4. Queues: A queue is a collection of elements that supports adding elements to the end of the queue and removing elements from the front of the queue.
+5. Stacks: A stack is a collection of elements that supports adding elements to the top of the stack
+and removing elements from the top of the stack
+'''
+# Dictionaries are mutable
+my_dict = {"apple": 1, "banana": 2, "orange": 3}
+print(my_dict["banana"]) # Output: 2
+
+# Tuples are immutable
+my_tuple = (1, 2, 3)
+print(my_tuple[1]) # Output: 2
+
+# Sets are mutable
+my_set = {1, 2, 3}
+print(2 in my_set) # Output: True
+
+# Queues are mutable
+from queue import Queue
+my_queue = Queue()
+my_queue.put(1)
+my_queue.put(2)
+print(my_queue.get()) # Output: 1
+
+# Stack are mutable
+my_stack = []
+my_stack.append(1)
+my_stack.append(2)
+print(my_stack.pop()) # Output: 2
+
+
+
+
+
+'''
 Important Things
 1. Clear and concise code: The could should be easy to read, understand and maintain.
 Use comments and docstrings to document your code and make it more undestandable.
