@@ -2,7 +2,17 @@
 with open('filename.txt', 'r') as file:
     contents = file.read()
     print(contents)
+'''
+1. open('filename.txt', 'r') is the syntax to open a file fo reading mode 'r'
+if the file does not exist, Python will raise a FileNotFoundError
+2. with - This line of code starts a context in which the file is opened.
+The advantage of using a with statement is that it will automatically 
+close the file for you once you are done with it
+3. 'as file' - This line of code assigns the file object to the variable 'file'
 
+
+
+'''
 
 ''' In Python, dictionaries are mutable.
 This means that the contents of a dictionary can be changed after it has been created.
