@@ -16,6 +16,18 @@ and classes taht accurately reflect their purpose and usage.
 9. Testing and debugging: Write unit tests to verify that the code works as intended and debug any issues that arive
 10. Security: Be aware of security concerns and implement appropriate measures to protect sensitive data and prevent attacks.
 '''
+'''
+The code uses a for loop to iterate through the numbers 1 to 20.
+The if statement is to check if each numbers is even. (If it is divisible by 2 with no remainder)
+If the number is even, it is printed to the console. The if i == 10: break statement
+is used to exit the loo[ after the first 10 even numbers have been printed.
+'''
+# Prints our the first 10 even numbers
+for i in range(1, 21):
+    if i % 2 == 0:
+        print(i)
+    if i == 10:
+        break
 
 
 # open() function to open files for reading
