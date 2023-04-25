@@ -1,3 +1,23 @@
+'''
+Important Things
+1. Clear and concise code: The could should be easy to read, understand and maintain.
+Use comments and docstrings to document your code and make it more undestandable.
+2. Robust error handling: Make sure the code handles all possible errors gracefully.
+3.Efficient Performance: Optimize the code to ensure it runs as fast as possible,
+especially for computationally intensive tasks.
+4. Proper use of variables and data structures: Use variables and data structures
+appropriately and avoid unnessary memory usage.
+5. Proper indentation and formatting: Follow consistent formatting guidelines for the code including
+indentation, whitespace, line length
+6. Good naming conventions: Use descriptive and meaningful names for variables, functions,
+and classes taht accurately reflect their purpose and usage.
+7.Proper documentation: Provide detailed documentation for the code including function signatures and parameter descriptions
+8. Version control: Use version control tools like Git to keep track of changes to the code and collaborate with others
+9. Testing and debugging: Write unit tests to verify that the code works as intended and debug any issues that arive
+10. Security: Be aware of security concerns and implement appropriate measures to protect sensitive data and prevent attacks.
+'''
+
+
 # open() function to open files for reading
 with open('filename.txt', 'r') as file:
     contents = file.read()
