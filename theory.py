@@ -1,3 +1,9 @@
+# open() function to open files for reading
+with open('filename.txt', 'r') as file:
+    contents = file.read()
+    print(contents)
+
+
 ''' In Python, dictionaries are mutable.
 This means that the contents of a dictionary can be changed after it has been created.
 For example, you can add, remove, or modify key-value pairs in a dictionary using various
