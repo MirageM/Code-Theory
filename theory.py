@@ -3,6 +3,7 @@ Lists -> Mutable
 String -> Mutable
 Tuples -> Immutable
 Sets -> Mutable
+Dictionaries -> Mutable
 
 '''
 
