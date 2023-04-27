@@ -1,4 +1,31 @@
 '''
+1. Variables: Variables are used to store data in Python.
+They can hold different types of data, such as strings, integers, and floating-point numbers.
+2. Lists: Lists are one of the most commonly used data structures in Python.
+They are used to store an ordered sequence of elements, which can be of any data type.
+Lists are mutable, meaning their contents can be changed.
+3. Tuples: Tuples are similar to lists, but they are immutable, meaning
+their contents cannot be changed once they are defined.
+4. Dictionaries: Dictionaries are used to store key-value pairs.
+They are commonly used to represent structured data, such as JSON data or configuration settings.
+5. Sets: Sets are used to store unique values in Python. 
+They are commonly used to perform set operations, such as union, intersection, difference.
+6. Loops: Loops are used to iterate over a sequence of elements in Python. 
+There are two types of loops in Python: for loops and while loops.
+7. Conditionals: Conditionals are used to execute different blocks of code based on whether
+a condition is true or false. The most common conditional statements in Python are if, elif, and else.
+8. Functions: Functions are used to encapsulate a block of code that can be reused multiple times.
+They can take parameters and return values.
+9. Classes: Classes are used to define custom data types in Python.
+They encapsulate data and behavior into a single object, making it easier to organize and manage complex code.
+10. Exceptions: Exceptions are used to handle errors and other exceptional conditions in Python.
+They allow you to gracefully handle errors and prevent your program from crashing.
+
+'''
+
+
+
+'''
 Mutables -> Lists, Dictionaries, Sets (Can be changed)
 Immutable -> Tuples, Strings, Numbers (Cannot be changed)
 1. Dictionaries: A dictionary is a collection of key-value pairs. Each key is unique and is assocaited with a value. 
