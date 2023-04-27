@@ -1,6 +1,6 @@
 '''
 Lists -> Mutable
-String -> Mutable
+String -> Immutable
 Tuples -> Immutable
 Sets -> Mutable
 Dictionaries -> Mutable
