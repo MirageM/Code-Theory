@@ -1,4 +1,25 @@
 '''
+Difference between class and object
+Class is a blueprint for creating objects. An object is an instance of a class. 
+
+A class defines a set of attributes and methods that describe the behavior and properties
+of objects created from it. It defines the structure of an object, including its data members,
+and member functions. Classes can be seen as a blueprint or a cookie cutter, which is used to create objects that share common characteristics.
+
+On the other hand, an object is an instance of a class, which means that it is a specific realization of a class.
+It represents a unique occurence of a class, with its own unique state and behavior. Objects are created from
+a class, with its own unique state and behavior Objects are created from class using the constructor method,
+which initializes the object with initial values
+
+To summarize, a class is an abstract entity that defies the attributes and methods of a group of objects,
+while an object is a specific instance of a class with its own unique state and behavior. 
+In other words, a class is a general concept, while an object is a specific realizaiton of that concept. 
+
+
+
+
+
+_________________________________________________________________________
 Python is an object-oriented programming (OOP) language. It supports thae fundamental principles of OOP,
 such as encapsulation, inheritance, and polymorphism. 
 
