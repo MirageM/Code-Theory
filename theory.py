@@ -1,4 +1,11 @@
 '''
+Lists -> Mutable
+String -> Mutable
+
+'''
+
+
+'''
 Difference between class and object
 Class is a blueprint for creating objects. An object is an instance of a class. 
 
