@@ -1,4 +1,19 @@
 '''
+Python is an object-oriented programming (OOP) language. It supports thae fundamental principles of OOP,
+such as encapsulation, inheritance, and polymorphism. 
+
+In Python, everything is an object, including variables, functions, and data structures like
+lists and dictionares. Objects are created from classes, which define their properties and behaviours. Classes in Python can inherit from other classes,
+allowing for code reuse and a hierarchical organization of code.
+
+Python's support for OOP makes it a powerful language for building complex applications, especially those that
+require modularity, maintainability, and extensibility. Additionally, Python's syntax and built-in functions ,ake it easy to
+write and read code that follow OOP principles.
+
+
+'''
+
+'''
 1. Variables: Variables are used to store data in Python.
 They can hold different types of data, such as strings, integers, and floating-point numbers.
 2. Lists: Lists are one of the most commonly used data structures in Python.
