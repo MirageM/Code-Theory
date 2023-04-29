@@ -1,12 +1,36 @@
+# Define a variable and print it
+x = 10
+print(x)
+
+# Define a list and print its contents
+my_list = [1, 2, 3]
+print(my_list)
+
+# Define a function taht takes two arguments and returns their sum
+def add_numbers(x, y):
+    return x + y
+
+# Call the function and print the result
+result = add_numbers(3,4)
+print(result)
+
+# Define a class with a method that prints a message
+class MyClass:
+    def say_hello(self):
+        print("Hello from MyClass!")
+
+# Create an object of the class and call its method
+my_object = MyClass()
+my_object.say_hello()
+
+
 '''
 Lists -> Mutable
 String -> Immutable
 Tuples -> Immutable
 Sets -> Mutable
 Dictionaries -> Mutable
-
 '''
-
 
 '''
 Difference between class and object
