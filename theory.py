@@ -11,7 +11,28 @@ class Rectangle:
     def area(self):
         return self.length  * self.width
 
+# Create an object of the class and call its methods
+my_rectangle = Rectangle(4, 5)
+print("Length:", my_rectangle.length)
+print("Width:", my_rectangle.width)
+print("Area:", my_rectangle.area())
 
+# Use a conditional statement to check a condition
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is less than or equal to 5")
+
+# Use a for loop to iterate over a list
+my_list = [1, 2, 3, 4, 5]
+for item in my_list:
+    print(item)
+
+# Hadnle an exception
+try:
+    y = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
 
 
 # Define a variable and print it
