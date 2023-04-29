@@ -1,3 +1,19 @@
+# Import a module and use one of its functions
+import math
+x = math.sqrt(25)
+print(x)
+
+# Define a class with a constructor and instance variables
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    def area(self):
+        return self.length  * self.width
+
+
+
+
 # Define a variable and print it
 x = 10
 print(x)
