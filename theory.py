@@ -19,6 +19,31 @@ while x < 20:
     print(x)
     x += 1
 
+# Functions:
+def add_numbers(x, y):
+    return x + y
+result = add_numbers(3, 4)
+print(result)
+
+# Classes and objects
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    
+    def area(self):
+        return self.length * self.width
+
+my_rectangle = Rectangle(4, 5)
+print("Length:", my_rectangle.length)
+print("Width:", my_rectangle.width)
+print("Area:", my_rectangle.area())
+
+# Modules and packages
+import math
+x = math.sqrt(25)
+print(x)
+
 
 
 
