@@ -44,7 +44,34 @@ import math
 x = math.sqrt(25)
 print(x)
 
+# File I/O
+with open("myfile.txt", "w") as f:
+    f.write("Hello, world!")
 
+with open("myfile.txt", "r") as f:
+    contents = f.read()
+    print(contents)
+
+# Exception handling
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+# Iterators and generators
+my_list = [1, 2, 3, 4, 5]
+
+# Using an iterator
+my_iterator = iter(my_list)
+print(next(my_iterator))
+print(next(my_iterator))
+
+# Using a generator
+def my_generator():
+    for i in range(10):
+        yield i
+for i in my_generator():
+    print(i)
 
 
 # Import a module and use one of its functions
