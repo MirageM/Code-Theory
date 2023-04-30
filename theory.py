@@ -1,3 +1,27 @@
+# Variables and data types:
+x = 10
+y = "hello"
+z = True
+my_list = [1, 2, 3, 4, 5]
+my_dict = {"name": "John", "age": 36}
+
+# Control flow:
+if x > 5:
+    print("x is greater than 5")
+elif x < 5:
+    print("x is less than 5")
+else:
+    print("x is equal to 5")
+for i in range(10):
+    print(i)
+
+while x < 20:
+    print(x)
+    x += 1
+
+
+
+
 # Import a module and use one of its functions
 import math
 x = math.sqrt(25)
