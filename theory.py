@@ -1,4 +1,29 @@
 '''
+lstrip() and rstrip() are string methods in Python that are similar to strip(),
+but they only remove whitespace characters from the left (beginning) or right (end) side of a string, respectively.
+'''
+my_string = "    hello     "
+lstripped_string = my_string.lstrip()
+print(lstripped_string) # Output: "hello     "
+
+rstripped_string = my_string.rstrip()
+print(rstripped_string) # Output: "    hello"
+
+my_string2 = "*****hello*****"
+lstripped_string2 = my_string2.lstrip("*")
+print(lstripped_string2) # Output: "hello*****"
+
+rstripped_string2 = my_string2.rstrip("*")
+print(rstripped_string2) # Output: "*****hello"
+
+
+'''
+lstrip() is used to remove whitespace characters from the begining of a string.
+rstrip() is used to remove whitespace characters from the end of a string.
+strip() is used to remove whitespace characters from the begining and/or end of a strip
+'''
+
+'''
 strip() is used to remove whitespace characters (spaces, tabs, and newlines) from the begining
 and/or end of a string. By default, it removes all whitespace characters, but you can also pass a string
 argument to remove specific characters.
