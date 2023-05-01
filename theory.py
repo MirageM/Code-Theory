@@ -3,6 +3,7 @@ strip() is used to remove whitespace characters (spaces, tabs, and newlines) fro
 and/or end of a string. By default, it removes all whitespace characters, but you can also pass a string
 argument to remove specific characters.
 '''
+# -> removes all whitespace characters from the begining and end of the string
 my_string = "   hello   "
 stripped_string = my_string.strip()
 print(stripped_string) # Output: "hello"
