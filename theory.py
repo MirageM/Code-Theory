@@ -1,9 +1,25 @@
 '''
+strip() is used to remove whitespace characters (spaces, tabs, and newlines) from the begining
+and/or end of a string. By default, it removes all whitespace characters, but you can also pass a string
+argument to remove specific characters.
+'''
+my_string = "   hello   "
+stripped_string = my_string.strip()
+print(stripped_string) # Output: "hello"
+
+my_string2 = "0000000hello0000000"
+stripped_string2 = my_string2.strip('0')
+print(stripped_string2) # Output: "hello"
+
+
+
+
+'''
 split() is used to split a string into a list of substrings based on a delimiter.
 The delimiter is passed as an argument to the 'split()' method. By default, the delimiter
 is a whitespace character, but it can be any string.
 '''
-# -> creates a list of substrings based on a delimiter
+# -> creates a list of substrings based on delimiter
 my_string = "hello world"
 my_list = my_string.split()
 print(my_list) # Output: ['hello', 'world']
