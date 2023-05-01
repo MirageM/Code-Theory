@@ -1,3 +1,14 @@
+'''
+split() is used to split a string into a list of substrings based on a delimiter.
+The delimiter is passed as an argument to the 'split()' method. By default, the delimiter
+is a whitespace character, but it can be any string.
+'''
+# -> creates a list of substrings based on a delimiter
+my_string = "hello world"
+my_list = my_string.split()
+print(my_list) # Output: ['hello', 'world']
+
+
 # Variables and data types:
 x = 10
 y = "hello"
