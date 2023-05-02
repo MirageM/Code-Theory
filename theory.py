@@ -1,3 +1,29 @@
+# The random library in Python provides a set of functions for generating random numbers and sequences. 
+# Generate a random integer between two values:
+import random
+# Generate a random integer between 0 and 9
+x = random.randint(0, 9)
+print(x) # Output: 4
+
+# Generate a random floating-point number between two values:
+x = random.random()
+print(x)
+# Generate a random floating-point number between 5 and 10
+x = random.uniform(5, 10)
+print(x) # Output: 7.329728936997814
+
+# Shuffle a list:
+# Shuffle a list in place
+numbers = [1, 2, 3, 4, 5]
+random.shuffle(numbers)
+print(numbers)
+
+# Choose a random element from a list:
+fruits = ['apple', 'banana', 'cherry']
+x = random.choice(fruits)
+print(x) # Output: "banana"
+
+
 # List comprehension: List comprehensions provide a concise way to create lists based on exisiting lists.
 numbers = [1, 2, 3, 4, 5]
 squares = [x ** 2 for x in numbers]
