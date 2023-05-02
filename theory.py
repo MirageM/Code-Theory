@@ -1,4 +1,22 @@
 '''
+In Python, you can define multiple __init__ methods in a single class, each with a different set of parameters. This is known as method overloading, which is the ability to define multiple methods with the same name but different parameters.
+'''
+class Person:
+    def __init__(self):
+        self.name = "Unknown"
+        self.age = 0
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+person1 = Person()
+print(person1.name) # Output: "Unknown"
+print(person1.age) # Output: 0
+
+person2 = Person("Alice", 25)
+print(person2.name) # Output: "Alice"
+print(person2.age) # Output: 25
+
+'''
 __init__ is a special method in Python classes that is automatically called when an object is created from the class.
 It is used to initialize the attributes (variables) of the object with default values, or with values passed as arguments.
 ___________________________________________________________________________________________________________________________
