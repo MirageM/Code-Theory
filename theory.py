@@ -1,4 +1,23 @@
 '''
+__init__ is a special method in Python classes that is automatically called when an object is created from the class.
+It is used to initialize the attributes (variables) of the object with default values, or with values passed as arguments.
+'''
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+person1 = Person("John", 36)
+print(person1.name) # Output: "John"
+print(person1.age) # Output: 36
+
+person2 = Person("Jane", 25)
+print(person2.name) # Output: "Jane"
+print(person2.age) # Output: 25
+
+
+
+'''
 lstrip() and rstrip() are string methods in Python that are similar to strip(),
 but they only remove whitespace characters from the left (beginning) or right (end) side of a string, respectively.
 '''
