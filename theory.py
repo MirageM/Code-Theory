@@ -5,9 +5,16 @@ ________________________________________________________________________________
 The class Person with an __init__ method takes two parameters name and age. Inside the method, we set the values of two instance variables
 (self.name and self.age) to the values passed as arguments
 When a new Person object was created and the values name and age was passed to the constructor,
-The constructor automatically calls the __init__ method to initialize the obect's attributes
+The constructor automatically calls the __init__ method to initialize the object's attributes
 In the __init__ is used to set up all the initial state of an object when it is created. 
 It is one of the most commonly used methods in Python classes, and it is called automatically when a new object is created.
+___________________________________________________________________________________________________________________________
+__init__ is similar to constructor in C++ and Java. It is run as soon as an object of a class is instantiated.
+Languages like Java or C++, a constructor is a special method that is called when an object is created and it is used to initialize the object's attributes
+In other languages like Java or C++, a constructor is a special method that is called when an object is created and it is used to initialize the object's instance variables (or attributes).
+The main difference between Python __init__ and constructors in other languages is that in Python, you can have multiple __init__ methods with different parameters, but in
+other languages, you can only have one constructor with the same name as the class.
+
 '''
 class Person:
     def __init__(self, name, age):
