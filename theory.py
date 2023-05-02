@@ -1,6 +1,13 @@
 '''
 __init__ is a special method in Python classes that is automatically called when an object is created from the class.
 It is used to initialize the attributes (variables) of the object with default values, or with values passed as arguments.
+___________________________________________________________________________________________________________________________
+The class Person with an __init__ method takes two parameters name and age. Inside the method, we set the values of two instance variables
+(self.name and self.age) to the values passed as arguments
+When a new Person object was created and the values name and age was passed to the constructor,
+The constructor automatically calls the __init__ method to initialize the obect's attributes
+In the __init__ is used to set up all the initial state of an object when it is created. 
+It is one of the most commonly used methods in Python classes, and it is called automatically when a new object is created.
 '''
 class Person:
     def __init__(self, name, age):
