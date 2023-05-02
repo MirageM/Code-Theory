@@ -1,3 +1,32 @@
+# List comprehension: List comprehensions provide a concise way to create lists based on exisiting lists.
+numbers = [1, 2, 3, 4, 5]
+squares = [x ** 2 for x in numbers]
+print(squares) # Output: [1, 4, 9, 16, 25]
+
+# Generators are a type of iterable, like lists or tuples, but thye don't store all the values in memory.
+# Instead, they generate the values on the fly as you iterate over them.
+def fibonacci(n):
+    a, b = 0, 1
+    for i in range(n):
+        yield a
+        a, b = b, a + b
+for num in fibonacci(10):
+    print(num)
+
+# Decorators are a way to modify or enhance the behavior of a function.
+# They are often used to add additional functionality to functions without modifying their source code.
+def my_decorator(func):
+    def wrapper():
+        print("Before the function is called.")
+        func()
+        print("After the function is called.")
+    return wrapper
+@my_decorator
+def say_hello():
+    print("Hello1")
+say_hello()
+
+
 '''
 In Python, you can define multiple __init__ methods in a single class, each with a different set of parameters. This is known as method overloading, which is the ability to define multiple methods with the same name but different parameters.
 '''
