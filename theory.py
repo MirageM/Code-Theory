@@ -26,6 +26,16 @@ def say_hello():
     print("Hello1")
 say_hello()
 
+# Context managerss are a way to manage resources (like files or database connections) that need to be cleaned up after they are used
+with open('file.txt', 'w') as f:
+    f.write('Hello, world!')
+
+# Error handling is the process of handling errors that may occur during the execution of a program.
+# In Python, you can use try-except blocks to handle errors.
+try:
+    x = 1 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
 
 '''
 In Python, you can define multiple __init__ methods in a single class, each with a different set of parameters. This is known as method overloading, which is the ability to define multiple methods with the same name but different parameters.
