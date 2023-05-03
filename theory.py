@@ -1,3 +1,10 @@
+'''
+x = random.randint(0, 9)
+x = random.random()
+x = random.uniform(5, 10)
+random.shuffle(numbers)
+x = random.choice(numbers)
+'''
 # The random library in Python provides a set of functions for generating random numbers and sequences. 
 # Generate a random integer between two values:
 import random
