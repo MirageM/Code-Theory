@@ -6,6 +6,53 @@ def is_palindrome(s):
 def remove_duplicate(lst):
     return list(set(lst))
 
+# A function to reverse a linked list
+class Node:
+    def __init__ (self, value = None):
+        self.value = value
+        self.next = None
+
+# A function to reverse a linked list
+def reverse_linked_list(head):
+    prev = None
+    current = head
+    while current:
+        next_node = current.next
+        current.next = prev
+        prev = current
+        current = next_node
+    return prev
+
+# A function to find the maximum subarray sum
+def max_subarray_sum(arr):
+    max_sum = float(-'inf')
+    current_sum = 0
+    for num in arr:
+        current_sum = max(num, current_sum + num)
+        max_sum = max(max_sum, current_sum)
+    return max_sum
+
+# A function to check if a binary tree is balanced
+class TreeNode:
+    def __init__(self, val = 0, left = None, right = None):
+        self.value = value
+        self. left = left
+        self.right = right
+
+def is_balanced(root):
+    if not root:
+        return True
+    left_height = height(root.left)
+    right_height = height(root.right)
+    if abs(left_height - right_height) <= 1 and is_balanced(root.left) and is_balanced(root.right):
+        return True
+    return False
+
+def height(root):
+    if not root:
+        return 0
+    return 1 + max(height(root.left), height(root.right))
+
 
 
 
