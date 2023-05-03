@@ -1,3 +1,14 @@
+# A Function to check if a string is a palindrome or not
+def is_palindrome(s):
+    return s == s[::-1]
+
+# A function to remove duplicates from a list
+def remove_duplicate(lst):
+    return list(set(lst))
+
+
+
+
 '''
 x = random.randint(0, 9)
 x = random.random()
