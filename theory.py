@@ -1,3 +1,21 @@
+# LinkedLists
+# delete_node(): removes a node from a linked list
+def delete_node(head, val):
+    # Case 1: head node contains the value to delete
+    if head.val == val:
+        head = head.next
+        return head
+    # Case 2: value to delete is not in head node
+    curr = head
+    prev = None
+    while curr:
+        if curr.val == val:
+            prev.next = curr.next
+            return head
+        prev = curr
+        curr = curr.next
+    return head
+
 # Dictionaires
 # get(): returns the value for a given key. If the key is not found, it returns a default value
 d = { 'a': 1, 'b': 2, 'c': 3 }
