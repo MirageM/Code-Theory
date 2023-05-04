@@ -1,3 +1,34 @@
+# Dictionaires
+# get(): returns the value for a given key. If the key is not found, it returns a default value
+d = { 'a': 1, 'b': 2, 'c': 3 }
+print(d.get('a')) # Output: 1
+print(d.get('d')) # Output: None
+print(d.get('d'), 0) # Output: 0
+
+# keys(): returns a view object that contains the keys of the dictionary
+d = {'d': 1, 'b': 2, 'c': 3}
+keys = d.keys()
+print(keys) # Output: dict_keys(['d', 'b', 'c'])
+
+# values(): returns a view object that contains the values of the dictionary
+d = {'d': 1, 'b': 2, 'c': 3}
+values = d.values()
+print(values) # Output: dict_values([1, 2, 3])
+
+# items(): returns a view object that contains the key-value pairs of the dictionary
+d = {'d': 1, 'b': 2, 'c': 3}
+items = d.items()
+print(items) # Output: dict_items([('d', 1), ('b', 2), ('c', 3)])
+
+# update(): updates the dictionary with the key-value pairs from another dictionary
+d1 = {'a': 1, 'b': 2}
+d2 = {'c': 3, 'd': 4}
+d1.update(d2)
+print(d1) # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+
+
+
 # Lists
 # append(): Adds an element to the end of the list
 lst = [1, 2, 3]
