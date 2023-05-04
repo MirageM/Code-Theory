@@ -1,3 +1,32 @@
+# Lists
+# append(): Adds an element to the end of the list
+lst = [1, 2, 3]
+lst.append(4)
+print(lst) # Output: [1, 2, 3, 4]
+
+# extend(): Adds elements from an iterable to the end of the list
+lst = [1, 2, 3]
+lst.extend(4, 5)
+print(lst) # Output: [1, 2, 3, 4, 5]
+
+# insert(): Inserts an element at a specific index
+lst = [1, 2, 3]
+lst.insert(1, 5)
+print(lst) # Output: [1, 5, 2, 3]
+
+# remove(): Removes the first occurence of a specific element from the list
+lst = [1, 2, 3, 4]
+lst.remove(2)
+print(lst) # Output: [1, 3, 4]
+
+# pop(): Removes and returns the last element of the list
+lst = [1, 2, 3]
+x = lst.pop()
+print(x) # Output: 3
+print(lst)  # Output: [1, 2]
+
+
+
 # A Function to check if a string is a palindrome or not
 def is_palindrome(s):
     return s == s[::-1]
