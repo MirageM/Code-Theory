@@ -1,3 +1,4 @@
+
 # LinkedLists
 # delete_node(): removes a node from a linked list
 def delete_node(head, val):
@@ -15,6 +16,16 @@ def delete_node(head, val):
         prev = curr
         curr = curr.next
     return head
+# reverse_list()
+
+# The XOR Operator is represented by the caret('^') symbol.
+# The XOR operator returns a '1' in each bit position where the corresponding bits of either but not both operands are '1'
+a = 0b1010 # binary representation of 10
+b = 0b1100 # binary representation of 12
+
+c = a ^ b # XOR operation
+
+print(bin(c)) # Output: 0b0110 (binary representation of 6)
 
 # Dictionaires
 # get(): returns the value for a given key. If the key is not found, it returns a default value
