@@ -1,3 +1,19 @@
+# Deleting in dictionaries
+# Elements can be deleted from a dictionary using the del keyword or the pop() method
+# Using the del keyword
+my_dict = {"apple": 1, "banana": 2, "orange": 3}
+del my_dict["banana"]
+print(my_dict) # Output: {"apple": 1, "orange": 3}
+
+# Using the pop() method
+my_dict = {"apple": 1, "banana": 2, "orange": 3}
+my_dict.pop("banana")
+print(my_dict) # Output: {"apple": 1, "orange": 3}
+
+#clear() method can be used to remove all elements from a dictionary
+my_dict = {"apple": 1, "banana": 2, "orange": 3}
+my_dict.clear()
+print(my_dict) # Output: {}
 
 # LinkedLists
 # delete_node(): removes a node from a linked list
