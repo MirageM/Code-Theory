@@ -45,6 +45,14 @@ process1.join()
 process2.join()
 
 
+# Arbitrary number of arguments using the *args and **kwargs syntax
+def my_function(*args, **kwargs):
+    print(args)
+    print(kwargs)
+my_function(1, 2, 3, name="Alice", age=30)
+# Output:
+# (1, 2, 3)
+# {'name': 'Alice', 'age', 30}
 
 # Deleting in dictionaries
 # Elements can be deleted from a dictionary using the del keyword or the pop() method
