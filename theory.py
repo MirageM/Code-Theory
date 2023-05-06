@@ -10,6 +10,10 @@ my_dict = {"apple": 1, "banana": 2, "orange": 3}
 my_dict.pop("banana")
 print(my_dict) # Output: {"apple": 1, "orange": 3}
 
+# Note that when using 'pop()', the default value to be returned if the key is not found in the dictionary
+my_dict = {"apple": 1, "banana": 2, "orange": 3}
+my_dict.pop("mango", 0) # Returns 0 because "mango" is not in the dictionary
+
 #clear() method can be used to remove all elements from a dictionary
 my_dict = {"apple": 1, "banana": 2, "orange": 3}
 my_dict.clear()
