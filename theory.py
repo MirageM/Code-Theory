@@ -21,6 +21,29 @@ thread2.start()
 thread1.join()
 thread2.join()
 
+# Multiprocessing
+from multiprocessing import Process
+
+def print_numbers():
+    for i in range(1, 11):
+        print(i)
+
+def print_letters():
+    for letter in "ABCDEFGHIJK":
+        print(letter)
+
+# Create two processes that will execute the print_numbers and print_letters functions simultaneously
+process1 = Process(target=print_numbers)
+process2 = Process(target=print_letters)
+
+# Start both processes
+process1.start()
+process2.start()
+
+# Wait for both processes to finish before exiting the program
+process1.join()
+process2.join()
+
 
 
 # Deleting in dictionaries
