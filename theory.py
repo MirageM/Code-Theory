@@ -1,3 +1,28 @@
+# Threading
+import threading
+
+def print_numbers():
+    for i in range(1, 11):
+        print(i)
+
+def print_letters():
+    for letter in "ABCDEFGHIJK":
+        print(letter)
+
+# Create two threads that will execute the print_numbers and print_letters functions simultaneously
+thread1 = threading.Thread(target=print_numbers)
+thread2 = threading.Thread(target=print_letters)
+
+# Start both threads
+thread1.start()
+thread2.start()
+
+# Wait for both threads to finish before exiting the program
+thread1.join()
+thread2.join()
+
+
+
 # Deleting in dictionaries
 # Elements can be deleted from a dictionary using the del keyword or the pop() method
 # Using the del keyword
