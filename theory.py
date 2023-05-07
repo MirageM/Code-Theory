@@ -1,3 +1,20 @@
+import asyncio
+
+async def my_coroutine(id):
+    print(f"Starting coroutine {id}")
+    await asyncio.sleep(2)
+    print(f"Ending coroutine {id}")
+
+async def main():
+    # Create a list of coroutines
+    coroutines = [my_coroutine(1), my_coroutine(2), my_coroutine(3)]
+
+    # Run the coroutines concurrently
+    await asyncio.gather(*coroutines)
+
+# Run the main function asynchronously
+asyncio.run(main())
+
 # Error Handling
 try:
     x = 10 / 0
