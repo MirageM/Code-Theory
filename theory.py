@@ -5,7 +5,7 @@ import re
 text = "The quick brown fox junmps over the lazy dog."
 
 # Match any word starting with the letter "q"
-pattern = r"\bw\w+"
+pattern = r"\bq\w+"
 
 matches = re.findall(pattern, text)
 print(matches) # Output: ['quick']
