@@ -1,3 +1,9 @@
+# Error Handling
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
 # Threading
 import threading
 
