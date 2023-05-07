@@ -1,3 +1,16 @@
+# Regular expressions (regex) are a way to match patterns in strings.
+# Regex syntax can be complex and difficult to understand, especially for those who are not familiar with it
+import re
+
+text = "The quick brown fox junmps over the lazy dog."
+
+# Match any word starting with the letter "q"
+pattern = r"\bw\w+"
+
+matches = re.findall(pattern, text)
+print(matches) # Output: ['quick']
+
+
 import asyncio
 
 async def my_coroutine(id):
