@@ -21,6 +21,18 @@ for article in articles:
     print(f"Title: {title}")
     print(f"Link: {link}")
 
+# Data analysis with Pandas
+import pandas as pd
+
+# Read in a CSV file
+df = pd.read_csv("data.csv")
+
+# Print the first 5 rows of the data
+print(df.head())
+
+# Calculate some basic statistics on the data
+print(df.describe())
+
 
 # Regular expressions (regex) are a way to match patterns in strings.
 # Regex syntax can be complex and difficult to understand, especially for those who are not familiar with it
