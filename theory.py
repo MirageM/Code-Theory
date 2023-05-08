@@ -1,3 +1,27 @@
+# Web scraping with Beautiful Soup
+# Beautiful Soup is a Python library that makes it easy to extract data from HTML and XML documents
+import requests
+from bs4 import BeautifulSoup
+
+# Send a request to the website and get its HTML content
+url = "https://www.nytimes.com/"
+reponse = requests.get(url)
+html_content = response.content
+
+# Parse the HTML content using Beautiful Soup
+soup = BeautifulSoup(html_content, "html.parser")
+
+# Find all the articles on the page
+articles = soup.find_all("article")
+
+# Extract the titles and links of each article
+for article in articles:
+    title = article.find("h2").text.strip()
+    link = article.find("a")["href"]
+    print(f"Title: {title}")
+    print(f"Link: {link}")
+
+
 # Regular expressions (regex) are a way to match patterns in strings.
 # Regex syntax can be complex and difficult to understand, especially for those who are not familiar with it
 import re
