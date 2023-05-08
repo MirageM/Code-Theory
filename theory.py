@@ -33,6 +33,22 @@ print(df.head())
 # Calculate some basic statistics on the data
 print(df.describe())
 
+# Machine learning with scikit-learn:
+# scikit-learn is a python library for maching learning
+# Here sciki-learn is used to train a linear regression model on some data
+from sklearn.linear_model import LinearRegression
+import numpy as np
+
+# Create some sample data
+x = np.array([1, 2, 3, 4, 5]).reshape(-1, 1)
+y = np.array([2, 4, 6, 8, 10])
+
+# Train a linear regression model on the data
+model = LinearRegression().fit(x, y)
+
+# Make a prediction with the model
+prediction = model.predct(np.array([[6]]))
+print(prediction)
 
 # Regular expressions (regex) are a way to match patterns in strings.
 # Regex syntax can be complex and difficult to understand, especially for those who are not familiar with it
