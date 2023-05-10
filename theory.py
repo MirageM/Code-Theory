@@ -53,6 +53,7 @@ print(add(2, 3)) # Output: The reuslt is: 5
 '''
 Yield keyword is used in a function to create a generator object. When a generator function is called, it returns a generator object without actually executing the body
 of the function. The yield keyword is used to produce a value from the generator functin and pause the function's execution until the next value is requested
+Yield -> Pause until the next value is requested
 '''
 def fibonacci(n):
     a, b = 0, 1
