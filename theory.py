@@ -18,6 +18,24 @@ Precedence and Associativity
 Formatting and Decorators
 Encapsulation
 '''
+'''
+Encapsulation is a technique used to hide the internal details of an object from the outside world. In Python, we can use underscores to indicate whether a method or attribute
+should be considered private or not.
+Note: The underscores indicate that the make and model attributes should be considered private. This provides getter and setter methods to allow access to 
+these attributes from outside the class
+'''
+class Car:
+    def __init__(self, make, model):
+        self._make = make
+        self._model = model
+    def get_make(self):
+        return self._make
+    def get_model(self):
+        return self._model
+    def set_make(self, make):
+        self._make = make
+    def set_model(self, model):
+        self._model = model
 
 
 # Web scraping with Beautiful Soup
