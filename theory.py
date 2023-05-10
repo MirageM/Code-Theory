@@ -50,6 +50,20 @@ def add(a, b):
 print(add(2, 3)) # Output: The reuslt is: 5
 
 
+'''
+Yield keyword is used in a function to create a generator object. When a generator function is called, it returns a generator object without actually executing the body
+of the function. The yield keyword is used to produce a value from the generator functin and pause the function's execution until the next value is requested
+'''
+def fibonacci(n):
+    a, b = 0, 1
+    for i in range(n):
+        yield a
+    a, b = b, a + b
+
+for num in fibonacci(10):
+    print(num)
+
+
 # Web scraping with Beautiful Soup
 # Beautiful Soup is a Python library that makes it easy to extract data from HTML and XML documents
 import requests
