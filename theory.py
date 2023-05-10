@@ -36,6 +36,18 @@ class Car:
         self._make = make
     def set_model(self, model):
         self._model = model
+'''
+Formatting and decorators:
+Python has a built-in formation function that can be used to format strings. Decorators are a way to modify the behavior of a function or class.
+'''
+def format_output(func):
+    def wrapper(*args, **kwargs):
+        result = func(*args, **kwargs)
+        return wrapper
+@format_output
+def add(a, b):
+    return a + b
+print(add(2, 3)) # Output: The reuslt is: 5
 
 
 # Web scraping with Beautiful Soup
