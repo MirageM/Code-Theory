@@ -1,3 +1,25 @@
+'''
+Inheritance,
+Functions,
+Generators and Coroutines,
+File I/O
+Lists and Tuples
+Functional Programming
+Comprehensions
+Concurrency
+Dictionaries
+Modules and Imports
+Regular Expression Usage
+Classes
+Control Flow
+Exception Handling
+Strings
+Precedence and Associativity
+Formatting and Decorators
+Encapsulation
+'''
+
+
 # Web scraping with Beautiful Soup
 # Beautiful Soup is a Python library that makes it easy to extract data from HTML and XML documents
 import requests
