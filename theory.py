@@ -18,6 +18,33 @@ Precedence and Associativity
 Formatting and Decorators
 Encapsulation
 '''
+# Precedence and Associativity
+# Example of operator precedence and associativty
+x = 10
+y = 5
+
+# Example 1
+result = x + y * 2 # Multiplication has higher precedence than addition
+print(result) # 20
+
+# Example 2
+result = (x + y) * 2 # Parentheses have highest precedence
+print(result) # 30
+
+# Example 3
+result = x / y ** 2 # Exponentiation has higher precedence than division
+print(result) # 0.4
+
+# Example 4
+result = 10 / 5/ 2 # Division has left-to-right associativity
+print(result) # 1.0
+
+# Example 5
+result = 2 ** 3 ** 2 # Exponentiation has right-to-left associativity
+print(result) # 512
+
+
+
 '''
 Encapsulation is a technique used to hide the internal details of an object from the outside world. In Python, we can use underscores to indicate whether a method or attribute
 should be considered private or not.
