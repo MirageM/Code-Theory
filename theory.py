@@ -35,6 +35,8 @@ print("Congratulations! You guess the number!")
 fh.write("abcdef" + "\n")
 print("abcdef", file = fh)
 
+# The child class acquires the properties and can access all the data members and functions defined in the parent class
+
 # Precedence and Associativity
 # Example of operator precedence and associativty
 x = 10
