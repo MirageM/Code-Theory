@@ -22,7 +22,7 @@ Encapsulation
 # Walrus operators
 '''
 Walrus operator, :=, is a new operator that was introduced in Python 3.8.
-It allosws you to assign a value to a variable as part of an expression.
+It allows you to assign a value to a variable as part of an expression.
 The walrus operator is useful when you want to evaluate an expression and assign the result to a variable.
 And then use that variable in a subsequent expression. 
 '''
@@ -31,6 +31,9 @@ while (guess := input("Guess a number between 1 and 10: ")) != str(random.randin
     print("Incorrect guess. Try again.")
 print("Congratulations! You guess the number!")
 
+# fh write a line containing (abcdef)
+fh.write("abcdef" + "\n")
+print("abcdef", file = fh)
 
 # Precedence and Associativity
 # Example of operator precedence and associativty
