@@ -19,6 +19,19 @@ Formatting and Decorators
 Encapsulation
 '''
 
+'''
+Control flow refers to the order in which statements are executed in a program. 
+Python provides several control flow statements to help you controlt he flow of your program's execution.
+These include if/else statements, for loops, while loops, and try/except statements.
+'''
+x = 5
+
+if x > 10:
+    print("x is greater than 10")
+else:
+    print("x is less than or equal to 10")
+
+
 # Walrus operators
 '''
 Walrus operator, :=, is a new operator that was introduced in Python 3.8.
