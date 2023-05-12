@@ -22,6 +22,7 @@ Encapsulation
 '''
 Regular expression (or regex) are patterns used to match character combinations in strings.
 Python has a built-in module called 're' that provides support for regular expressions.
+-> Regular expressions are patterns to match characters
 '''
 import re
 text = "The quick brown fox jumps over the lazy dog"
