@@ -20,6 +20,17 @@ Encapsulation
 '''
 
 '''
+Regular expression (or regex) are patterns used to match character combinations in strings.
+Python has a built-in module called 're' that provides support for regular expressions.
+'''
+import re
+text = "The quick brown fox jumps over the lazy dog"
+pattern = r"fox"
+
+matches = re.findall(pattern, text)
+print(matches)
+
+'''
 Control flow refers to the order in which statements are executed in a program. 
 Python provides several control flow statements to help you controlt he flow of your program's execution.
 These include if/else statements, for loops, while loops, and try/except statements.
