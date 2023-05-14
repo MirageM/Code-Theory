@@ -1,3 +1,23 @@
+# Regular Expression Usage:
+import re
+
+pattern = r"\b[A-ZO-9.%+-]+@[A-ZO-9.-]+\.[A-Z]{2,}\b""
+text = "Contact us at info@example.com or support@example.org."
+matches = re.findall(pattern, text, re.IGNORECASE)
+print(matches)
+
+# Classes:
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+    
+    def area(self):
+        return self.width * self.height
+rectangle = Rectange(5, 10)
+print(rectangle.area())
+
+
 '''
 Regular Expression Usage:
 Regular expressions are patterns used to match character combinatin in strings. They
