@@ -45,6 +45,11 @@ function or object without modifying its underlying code. Examples of decorators
 @statismethod, which allows you to define a method that doesn't require an instance of the class,
 and @property, which allows you to define a method that is accessed like an attribute.
 
+Encapsulation:
+Encapsulation is a concept in object-oriented programming that refers to the idea of bundling data and behaviour into a single unit, 
+and then restricting access to that unit from outside the class. This allows you to control how the data is manipulated, and helps prevent
+accidental or malicious modificaiton of the data. Encapsulation is typically achieved using access modifiers, such as private
+or protected, which limit the visibility of class members from outside the class
 '''
 
 
