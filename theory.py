@@ -14,8 +14,58 @@ class Rectangle:
     
     def area(self):
         return self.width * self.height
-rectangle = Rectange(5, 10)
+rectangle = Rectangle(5, 10)
 print(rectangle.area())
+
+# Control Flow:
+x = 5
+
+if x > 10:
+    print("x is greater than 10")
+elif x < 5:
+    print("x is less than 5")
+else:
+    print("x is between 5 and 10")
+
+# Exception Handling:
+try:
+    num - int(input("Enter a number: "))
+    result = 10 / num
+    print("Result:", result)
+except ZeroDivisionError:
+    print("Error: Cannot divided by zero")
+except ValueError:
+    print("Error: Invalid input:")
+
+# Strings
+greeting = "Hello, world!"
+print(greeting[0]) # print "H"
+print(greeting[7:12]) # print "world"
+print(greeting.upper()) # prints "HELLO, WORLD!""
+
+# Precedence and Associativity
+x = 2 + 3 * 4
+print(x) # prints 14
+
+y = (2+ 3) * 4
+print(y) # prints 20
+
+# Formatting and Decorators
+class MyClass:
+    def __init__(self, value):
+        self._value = value
+    
+    @staticmethod
+    def my_static_method():
+        print("This is a static method.")
+    
+    @ property
+    def value(self):
+        return self._value
+
+my_object = MyClass(42)
+MyClass.my_static_method()
+print(my_object.value)
 
 
 '''
