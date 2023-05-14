@@ -1,4 +1,56 @@
 '''
+Regular Expression Usage:
+Regular expressions are patterns used to match character combinatin in strings. They
+can be used for a variety of tasks, such as validating input or searching for specfic
+patterns in text. Regular expressions are typically written using a special syntax that includes metacharacters,
+which represent sets of characters or behaviors.
+
+Classes:
+Classes are a way to define custom data types in object-oriented programming. They allow
+you to encapsulate data and behaviour into a single unit, which can then be instantiated
+and manipulated as objects. Classes can contain attributes, which represent data 
+associated with the class, and methods, which represent the behvaours or actions that the class can perform
+
+Control Flow:
+Control flow refers to the order in which statements are executed in a program. Control flow statements, such as if/else statements and loops, allow you to change
+the oreder of execution based on certain contions or criteria. For exanmple, an if statement might execute one block of code if a certain condition is true, and a differnt block of code
+if the condition is false.
+
+Exception Handling:
+Exception handling is a mechanism for dealing with errors or other unexpected events
+that occur during the execution of a program. When an exception is thrown, the program
+can catch it and take appropriate action, such as displaying an error message or trying to
+recover from the error. Exception handling is an important part of writing robust and
+reliable software.
+
+Strings:
+String are a data type used to represent text in programming. They can contain any cobination of letters,
+numbers and symbols, and can be manipulated using a variety of string methods. Some common string operations
+include concatenation (joining two strings together), slicing (selecting a portion of a string), and searching
+(finding the location of a specific substring within a larger string)
+
+Precedence and Assosiativity:
+Precedence and associativity are rules that determine the order in which operators are
+evaludated in an expression. Precedence refers to the orer in which operators of different levels
+of precedence are evaluated, while associativity determines the orer in which
+operators of the same precedence are evaludated. For example, in the expression 2+3*4,
+the multiplication operator (*) has higher precedence than the addition operator (+), so
+the expression is evaluated as 2 + (3*4) = 14
+
+Formatting and Decorators:
+Formatting and decorators are ways to modify the behavior or output of functions an objects
+in Python. Formatting allows you to control the way that data is displayed or formatted,
+while decorators allow you to add additional functionality or behaviour to a 
+function or object without modifying its underlying code. Examples of decorators include
+@statismethod, which allows you to define a method that doesn't require an instance of the class,
+and @property, which allows you to define a method that is accessed like an attribute.
+
+'''
+
+
+
+
+'''
 Inheritance,
 Functions,
 Generators and Coroutines,
