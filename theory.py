@@ -121,7 +121,9 @@ and then restricting access to that unit from outside the class. This allows you
 accidental or malicious modificaiton of the data. Encapsulation is typically achieved using access modifiers, such as private
 or protected, which limit the visibility of class members from outside the class
 '''
-
+# Inheritance
+# Functions
+# Generators and Coroutines
 
 
 
