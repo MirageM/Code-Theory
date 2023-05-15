@@ -125,7 +125,11 @@ or protected, which limit the visibility of class members from outside the class
 # Functions
 # Generators and Coroutines
 # File I/O
-# Function Prgramming
+# Functional Prgramming
+# Comprehensions
+# Concurrency
+# Dictionaries
+# Modules and Imports
 
 
 
