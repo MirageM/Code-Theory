@@ -1,3 +1,29 @@
+# Inheritance
+# Functions
+# Generators and Coroutines
+# File I/O
+# Functional Programming
+# Comprehensions
+
+
+# Inheritance
+# Functions
+# Generators and Coroutines
+# File I/O
+# Functional Prgramming
+# Comprehensions
+# Concurrency
+# Dictionaries
+# Modules and Imports
+# Regular Expression Usage
+# Classes
+# Control Flow
+# Exception Handling
+# Strings
+# Precedence and Associativity
+# Formatting and Decorators
+# Encapsulation
+
 # Regular Expression Usage:
 import re
 
