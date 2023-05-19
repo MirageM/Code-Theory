@@ -4,6 +4,15 @@
 # File I/O
 # Functional Programming
 # Comprehensions
+# Concurrency
+# Dictionaries
+# Modules and Imports
+# Regular Expression Usage
+# Classes
+# Control Flow
+# Exception Handling
+# Strings
+# Precedence and Associativity
 
 
 # Inheritance
