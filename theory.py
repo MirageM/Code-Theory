@@ -13,25 +13,9 @@
 # Exception Handling
 # Strings
 # Precedence and Associativity
-
-
-# Inheritance
-# Functions
-# Generators and Coroutines
-# File I/O
-# Functional Prgramming
-# Comprehensions
-# Concurrency
-# Dictionaries
-# Modules and Imports
-# Regular Expression Usage
-# Classes
-# Control Flow
-# Exception Handling
-# Strings
-# Precedence and Associativity
-# Formatting and Decorators
+# Formatting and Decoraotrs
 # Encapsulation
+
 
 # Regular Expression Usage:
 import re
