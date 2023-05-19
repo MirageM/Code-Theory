@@ -135,7 +135,9 @@ or protected, which limit the visibility of class members from outside the class
 # Control Flow
 # Exception Handling
 # Strings
-# Precdence and Associativity
+# Precedence and Associativity
+# Formatting and Decorators
+# Encapsulation
 
 
 
