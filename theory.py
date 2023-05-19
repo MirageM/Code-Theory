@@ -133,6 +133,9 @@ or protected, which limit the visibility of class members from outside the class
 # Regular Expression Usage
 # Classes
 # Control Flow
+# Exception Handling
+# Strings
+# Precdence and Associativity
 
 
 
