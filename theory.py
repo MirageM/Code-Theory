@@ -23,7 +23,27 @@ hello() # Output: Before function execution
         # Hello, world!
         # After function execution
 
+# Encapsulation
+class Car:
+    def __init__(self, make, model):
+        self._make = make # Protected attribute
+        self.__model = model # Private attribute
+    
+    def get_make(self):
+        return self._make
+    
+    def get_model(self):
+        return self.__model
 
+    def set_model(self, model):
+        self,__model = model
+
+my_car = Car("Toyata", "Corolla")
+print(my_car.get_make()) # Output: Toyota
+print(my_car.get_model()) # Output: Corolla
+
+my_car.set_model("Camry")
+print(my_car.get_model()) # Output: Camry
 
 
 # Inheritance
