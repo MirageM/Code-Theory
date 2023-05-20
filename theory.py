@@ -1,3 +1,10 @@
+# Precedence and Associativity
+result = 2 + 3 * 4 # Multiplication has higher precendence than addition
+print(result) # Output: 14
+
+
+
+
 # Inheritance
 # Functions
 # Generators and Coroutines
@@ -13,7 +20,7 @@
 # Exception Handling
 # Strings
 # Precedence and Associativity
-# Formatting and Decoraotrs
+# Formatting and Decorators
 # Encapsulation
 
 
