@@ -2,6 +2,27 @@
 result = 2 + 3 * 4 # Multiplication has higher precendence than addition
 print(result) # Output: 14
 
+# Formatting
+name = "John"
+age = 25
+print("My name is {} and I'm {} years old.".format(name, age)) # Output: name is John and I'm 25 years old.
+
+# Decorators
+def decorator(func):
+    def wrapper():
+        print("Before function execution")
+        func()
+        print("After function execution")
+    return wrapper
+
+@decorator
+def hello():
+    print("Hello, world!")
+
+hello() # Output: Before function execution
+        # Hello, world!
+        # After function execution
+
 
 
 
