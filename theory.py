@@ -1,3 +1,19 @@
+# Control Flow
+num = 10
+if num > 0:
+    print("Number is positive")
+elif num < 0:
+    print("Number is negative")
+else:
+    print("Number is zero")
+
+for i in range(5):
+    print(i)
+
+while num > 0:
+    print(num)
+    num -= 1
+
 # Precedence and Associativity
 result = 2 + 3 * 4 # Multiplication has higher precendence than addition
 print(result) # Output: 14
