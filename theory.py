@@ -14,6 +14,19 @@ while num > 0:
     print(num)
     num -= 1
 
+# Exception Handling
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Error: Division by zero")
+
+try:
+    value = int("abc")
+except ValueError:
+    print("Error: Invalid integer")
+
+
+
 # Precedence and Associativity
 result = 2 + 3 * 4 # Multiplication has higher precendence than addition
 print(result) # Output: 14
