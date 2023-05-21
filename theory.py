@@ -25,6 +25,15 @@ try:
 except ValueError:
     print("Error: Invalid integer")
 
+# Strings
+message = "Hello, World!"
+
+print(message.upper()) # HELLO, WORLD!
+print(message.lower()) # hello, world!
+print(message.startwith("Hello")) # True
+print(message.endwith("World!")) # True
+print(message.split(".")) # ['Hello', 'World!']
+print(len(message)) # 13
 
 
 # Precedence and Associativity
