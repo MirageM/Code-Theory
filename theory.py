@@ -1,3 +1,14 @@
+# Modules and Imports
+import math
+
+print(math.sqrt(16)) # Output: 4.0
+
+from random import randint
+
+print(randint(1, 10)) # Output: Random number between 1 and 10
+
+
+
 # Control Flow
 num = 10
 if num > 0:
