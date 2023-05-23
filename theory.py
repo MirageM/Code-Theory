@@ -1,3 +1,19 @@
+# Comprehensions
+numbers = [1, 2, 3, 4, 5]
+
+# List comprehension
+squared_numbers = [num**2 for num in numbers]
+print(squared_numbers) # Output: [1, 4, 9, 16, 25]
+
+# Set comprehension
+even_numbers = {num for num in numbers if num % 2 == 0}
+print(even_numbers) # Output: {2, 4}
+
+# Dictionary Comprehension
+number_dict = {num: num**2 for num in numbers}
+print(number_dict) # Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+
 # Modules and Imports
 import math
 
