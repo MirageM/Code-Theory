@@ -7,6 +7,16 @@ from random import randint
 
 print(randint(1, 10)) # Output: Random number between 1 and 10
 
+# Regular Expression Usage
+import re
+
+pattern = r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b"
+email = "example@example.com"
+
+if re.match(pattern, email, re.IGNORECASE):
+    print("Valid email")
+else:
+    print("Invalid email")
 
 
 # Control Flow
