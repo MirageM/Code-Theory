@@ -26,6 +26,21 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
 
 print(list(results)) # Output: [1, 4, 9, 16, 25]
 
+# Dictionaries
+person = {
+    "name": "John",
+    "age": 25,
+    "city": "New York"
+}
+
+print(person["name"]) # Output: John
+print(person.get("age")) # Output: 25
+
+person["occupation"] = "Engineer"
+print(person)
+
+del person["age"]
+print(person)
 
 # Modules and Imports
 import math
