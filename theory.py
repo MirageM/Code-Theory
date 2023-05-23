@@ -18,6 +18,21 @@ if re.match(pattern, email, re.IGNORECASE):
 else:
     print("Invalid email")
 
+# Classes
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+    
+    def area(self):
+        return math.pi * self.rasius**2
+    
+    def circumference(self):
+        return 2 * math.pi * self.radius
+
+my_circle = Circle(5)
+print("Area:",my_circle.area())
+print("Circumference:", my_circle.circumference())
+
 
 # Control Flow
 num = 10
