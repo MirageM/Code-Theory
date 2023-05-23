@@ -13,6 +13,19 @@ print(even_numbers) # Output: {2, 4}
 number_dict = {num: num**2 for num in numbers}
 print(number_dict) # Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 
+# Concurrency
+import concurrent.futures
+
+def square_numbers(num):
+    return num**2
+
+numbers = [1, 2, 3, 4, 5]
+
+with concurrent.futures.ThreadPoolExecutor() as executor:
+    results = executor.map(square_number, numbers)
+
+print(list(results)) # Output: [1, 4, 9, 16, 25]
+
 
 # Modules and Imports
 import math
