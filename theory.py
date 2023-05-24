@@ -3,10 +3,13 @@
 # Generator and Couroutines
 
 # File I/O
-# File I/O
-# File I/O
+# File Input/Output
+# File Input/Output
 
 # Functional Programming
+# Functional Programming
+# Functional Programming
+
 # Comprehensions
 numbers = [1, 2, 3, 4, 5]
 
