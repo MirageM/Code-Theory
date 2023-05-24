@@ -1,3 +1,9 @@
+# Generators and Coroutines
+# Generator and Couroutines
+# Generator and Courotines
+
+# File I/O
+# Functional Programming
 # Comprehensions
 numbers = [1, 2, 3, 4, 5]
 
