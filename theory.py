@@ -59,6 +59,23 @@ with open(file_path, "r") as file:
     content = file.read()
     print(content) # Hello, World!
 
+# Functional Programming
+numbers = [1, 2, 3, 4, 5]
+
+# Map
+squared_numbers = list(map(lambda x: x**2, numbers))
+print(squared_numbers) # [1, 4, 9, 16, 25]
+
+# Filter
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers) # [2, 4]
+
+# Reduce (requires importing the functools module)
+from functool import reduce
+
+sum_of_numbers = reduce(lambda x, y: x + y, numbers)
+print(sum_of_numbers) # 15
+
 
 
 # Generators and Coroutines
