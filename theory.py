@@ -29,6 +29,24 @@ def add_numbers(a, b):
 result = add_numbers(3, 5)
 print(result) # 8
 
+# Generators and Coroutines
+def countdown(n):
+    while n > 0:
+        yield n
+        n -= 1
+
+for num in countdown(5):
+    print(num)
+
+def coroutine_example():
+    while True:
+        x = yield
+        print("Received:", x)
+
+coroutine = coroutine_example()
+next(coroutine)
+coroutine.send(10) # Received: 10
+
 
 
 # Generators and Coroutines
