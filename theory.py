@@ -47,6 +47,18 @@ coroutine = coroutine_example()
 next(coroutine)
 coroutine.send(10) # Received: 10
 
+# File I/O
+file_path = "example.txt"
+
+# Writing to a file
+with open(file_path, "w") as file:
+    file.write("Hello, World!")
+
+# Reading from a file
+with open(file_path, "r") as file:
+    content = file.read()
+    print(content) # Hello, World!
+
 
 
 # Generators and Coroutines
