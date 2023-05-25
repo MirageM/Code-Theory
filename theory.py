@@ -1,3 +1,29 @@
+# Inheritance
+class Animal:
+    def __init__ (self, name):
+        self.name = name
+    
+    def speak(self):
+        raise NotImplementedError("Subclass must implement this method")
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+
+dog = Dog("Buddy")
+print(dog.name) # Buddy
+print(dog.speak()) # Woof
+
+cat = Cat("Fluffy")
+print(cat.name) # Fluffy
+print(cat.speak()) # Meow
+
+
+
 # Generators and Coroutines
 # Generator and Couroutines
 # Generator and Couroutines
