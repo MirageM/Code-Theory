@@ -22,6 +22,13 @@ cat = Cat("Fluffy")
 print(cat.name) # Fluffy
 print(cat.speak()) # Meow
 
+# Functions
+def add_numbers(a, b):
+    return a + b
+
+result = add_numbers(3, 5)
+print(result) # 8
+
 
 
 # Generators and Coroutines
