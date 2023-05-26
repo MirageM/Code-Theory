@@ -1,3 +1,28 @@
+# Threading
+import threading
+import time
+
+# Define a function to be executed by the thread
+def count_down(name, n):
+    while n > 0:
+        print(f"{name}: {n}")
+        n -= 1
+        time.sleep(1)
+
+# Create two thread objects
+thread1 = threading.Thread(target=count_down, args=("Thread 1", 5))
+thread2 = threading.Thread(target=count_down, args=("Thread 2", 3))
+
+# Start the threads
+thread1.start()
+thread2.start()
+
+# Wait for the threads to finish
+thread1.join()
+thread2.join()
+
+print("Threads have finished executing.")
+
 # SERVER:
 # Socket Programming with client and server
 import socket
