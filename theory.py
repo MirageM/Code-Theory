@@ -51,7 +51,18 @@ print('Connected to server at {}:{}'.format(server.host, server_port))
 
 while True:
     # Send data to the server
-    
+    message = input('Enter message: ')
+    client_socket.send(message.encode())
+
+    # Receive response from the server
+    response = client_socket.recv(1024).decode()
+    print('Received response:', response)
+
+    if message.lower() == 'bye':
+        break
+# Close the connection
+client_socket.close()
+
 
 
 # Threading
