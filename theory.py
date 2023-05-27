@@ -1,4 +1,4 @@
-# Server
+# Server Side:
 import socket
 
 # Define the host and port
@@ -36,6 +36,22 @@ while True:
 # Close the connection
 client_socket.close()
 server_socket.close()
+
+# Client Side:
+
+import socket
+
+# Define the server host and port
+server_host = 'localhost'
+server_port = 12345
+
+# Create a socket object
+client_socket.connect((server_host, server_port))
+print('Connected to server at {}:{}'.format(server.host, server_port))
+
+while True:
+    # Send data to the server
+    
 
 
 # Threading
