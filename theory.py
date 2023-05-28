@@ -1,3 +1,45 @@
+# Chat Application
+# Server:
+import socket
+import threading
+
+# Define the host and port
+host = 'localhost'
+port = 12345
+
+# Create a socket object
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Bind the socket to the host and port
+server_socket.bind((host, port))
+
+# Listen for incoming connections
+server_socket.listen(5)
+print('Server listening on {}: {}'.format(host, port))
+
+# Listen to store client connections
+client = []
+nicknames = []
+
+# Broadcast a mesage to all clients
+def broadcast(message):
+    for client in clients:
+        client.send(message)
+
+# Handle client connections
+def handle(client):
+    while True:
+        try:
+            # Receive message from client
+            message = client.recv(1024)
+            broadcast(message)
+        except:
+            # Handle client diconnection
+            
+
+
+
+
 # Server Side:
 import socket
 
