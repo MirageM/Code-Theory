@@ -18,7 +18,7 @@ server_socket.listen(5)
 print('Server listening on {}: {}'.format(host, port))
 
 # Listen to store client connections
-client = []
+clients = []
 nicknames = []
 
 # Broadcast a mesage to all clients
@@ -35,7 +35,14 @@ def handle(client):
             broadcast(message)
         except:
             # Handle client diconnection
-            
+            index = clients.index(client)
+            clients.remove(client)
+            client.close()
+            nickname = nickname[index]
+            nicknames.remove(nickname)
+            broadcast('{} left the chat!\n'.format(nickname).encode())
+            break
+
 
 
 
