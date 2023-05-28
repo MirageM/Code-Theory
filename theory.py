@@ -112,6 +112,31 @@ while True:
 # Close the connection
 client_socket.close()
 
+# Accept client connections and start handling them 
+def accept_connections():
+    while True:
+        client, address = server_socket.accept()
+        print('Connected with {}'.format(str(address)))
+
+        # Prompt the client for a nickname
+        client.send('NICK'.encode())
+        nickname = client.recv(1024).decode()
+
+        # Add the client and nickname to the lists
+        nicknames.append(nickname)
+        clients.append(client)
+
+        # Broadcast the nickname to all clients
+        broadcast('{} joined the chat!\n'.format(nickname).encode())
+        client.send('Connected to the server!\n'.encode())
+
+        # Start handling the client in a separate thread
+        thread = threading.Thread(target = handle, args=(client,))
+        thread.start()
+
+accept_connections()
+
+
 
 
 # Threading
