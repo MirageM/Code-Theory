@@ -170,6 +170,12 @@ def receive():
             client_socket.close()
             break
 
+# Start receiving and sending threads
+receive_thread = threading.Thread(target=receive)
+receive_thread.start()
+
+send_thread = threading.Thread(target=send)
+send_thread.start()
 
 
 
