@@ -136,6 +136,24 @@ def accept_connections():
 
 accept_connections()
 
+# Client:
+import socket
+import threading
+
+# Define the server host and port
+server_host = 'localhost'
+server_port = 12345
+
+# Create a socket object
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Connect to the server
+client_socket.connect((server_host, server_port))
+
+# Prompt the user for a nickname
+nickname = input('Enter your nickname: ')
+client_socket.send(nickname.encode())
+
 
 
 
