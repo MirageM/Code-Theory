@@ -154,6 +154,22 @@ client_socket.connect((server_host, server_port))
 nickname = input('Enter your nickname: ')
 client_socket.send(nickname.encode())
 
+# Handle receiving messages from the server
+def receive():
+    while True:
+        try:
+            # Receive message from server
+            message = client_socket.recv(1024).decode()
+            if message == 'NICK':
+                client_socket.send(nickname.encode())
+            else:
+                print(message)
+        except:
+            # Handle client disconnection
+            print('An error occured. You have been disconnected from the server')
+            client_socket.close()
+            break
+
 
 
 
