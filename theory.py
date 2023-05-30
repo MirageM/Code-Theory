@@ -1,3 +1,9 @@
+'''
+The function 'validate_password takes a password as input and checks various conditions to validate it.
+It uses regular expressions ('re' module) to perform pattern matching
+'''
+
+
 # Validates Password
 import re
 def validate_password(password):
