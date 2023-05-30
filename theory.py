@@ -3,6 +3,34 @@ The function 'validate_password takes a password as input and checks various con
 It uses regular expressions ('re' module) to perform pattern matching
 '''
 
+import re
+
+def validate_password(password):
+    # Check length
+    if len(password) < 8:
+        return False
+    
+    # Check at least one number
+    if not re.search(r'\d', password):
+        return False
+    
+    # Check at least two letters (one upper case, one lower case)
+    if not re.search(r'[a-z].*[A-Z]|[A-Z].*[a-z]', password):
+        return False
+    
+    # Check at least one special character
+    if not re.search(r'[!#$%^&+=*()]', password):
+        return False
+    
+    return True
+
+# Test the password validation function
+password = input("Enter a password: ")
+
+if validate_password(password):
+    print("Password is valid.")
+else:
+    print("Password is not valid")
 
 # Validates Password
 import re
