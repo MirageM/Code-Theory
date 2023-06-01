@@ -1,3 +1,15 @@
+# reverse_works takes a string 's' as input and returns
+# the modified string with the words reversed
+def reverse_words(s: str) -> str:
+    words = s.split()
+    reversed_words = []
+    for word in words:
+        reversed_word = reverse_word(word)
+        reversed_words.append(reversed_word)
+    return ' '.join(reversed_words)
+
+
+
 '''
  Problem: Valid Parentheses
  Description: Given a string containing only parentheses ('(',')','{','}','[',']') determine if the 
