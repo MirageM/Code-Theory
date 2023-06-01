@@ -1,4 +1,23 @@
 '''
+ Problem: Valid Parentheses
+ Description: Given a string containing only parentheses ('(',')','{','}','[',']') determine if the 
+ input string is valid. An input string is valid if:
+ 1. Open brackets must be closed by the same type of brackets
+ 2. Open brackets must be closed in the correct order.
+
+ You need to implement the following three functions:
+
+ 1. is_valid_parentheses(s: str) -> bool: This functon takes a string 's' as input
+ and returns 'True' If the stringis valid parentheses, and 'False' otherwise'
+ 2. is_openning_bracket(c: str) -> bool: This function takes a charcter c as input
+ and returns True. If the character is an opening bracket and False otherwise.
+ 3. is_matching_pair(opening: str, closing: str) -> bool: This function takes two
+ characters opening and closing as input and returns True if they form a matching
+ pair of brackets and False otherwise
+'''
+
+
+'''
 The function 'validate_password takes a password as input and checks various conditions to validate it.
 It uses regular expressions ('re' module) to perform pattern matching
 '''
