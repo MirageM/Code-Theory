@@ -26,6 +26,10 @@ def is_valid_parentheses(s: str) -> bool:
                 return False
     return len(stack) == 0
 
+def is_opening_bracket(c: str) -> bool:
+    return c in ['(','[','{']
+
+
 '''
 The function 'validate_password takes a password as input and checks various conditions to validate it.
 It uses regular expressions ('re' module) to perform pattern matching
