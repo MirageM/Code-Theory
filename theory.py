@@ -16,6 +16,15 @@
  pair of brackets and False otherwise
 '''
 
+def is_valid_parentheses(s: str) -> bool:
+    stack = []
+    for c in s:
+        if is_opening_bracket(c):
+            stack.append(c)
+        else:
+            if not stack or not is_matching_pair(stack.pop(), c):
+                return False
+    return len(stack) == 0
 
 '''
 The function 'validate_password takes a password as input and checks various conditions to validate it.
