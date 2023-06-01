@@ -1,5 +1,5 @@
-# reverse_works takes a string 's' as input and returns
-# the modified string with the words reversed
+# reverse_works takes a string 's' as input
+# and returns the modified string with the words reversed
 def reverse_words(s: str) -> str:
     words = s.split()
     reversed_words = []
@@ -7,6 +7,10 @@ def reverse_words(s: str) -> str:
         reversed_word = reverse_word(word)
         reversed_words.append(reversed_word)
     return ' '.join(reversed_words)
+
+# reverse_word takes a word as input and returns the reversed word
+def reverse_word(word: str) -> str:
+    return reverse_string(word)
 
 
 
