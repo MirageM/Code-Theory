@@ -29,6 +29,9 @@ def is_valid_parentheses(s: str) -> bool:
 def is_opening_bracket(c: str) -> bool:
     return c in ['(','[','{']
 
+def is_matching_pair(opening: str, closing: str) -> bool:
+    pairs = {'(':')','[':']','{':'}'}
+    return pairs[opening] == closing
 
 '''
 The function 'validate_password takes a password as input and checks various conditions to validate it.
