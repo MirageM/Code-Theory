@@ -12,6 +12,11 @@ def reverse_words(s: str) -> str:
 def reverse_word(word: str) -> str:
     return reverse_string(word)
 
+# reverse_string takes a string s as input
+# and returns the reversed string
+def reverse_string(s: str) -> str:
+    return s[::-1]
+
 
 
 '''
