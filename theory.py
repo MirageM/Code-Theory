@@ -8,6 +8,14 @@ def length_of_longest_substring(s: str) -> int:
             longest_length = max(longest_length, len(substring))
     return longest_length
 
+def is_repeating(substring: str) -> bool:
+    char_count = {}
+    for char in substring:
+        if char in char_count:
+            return True
+    char_count[char] = 1
+    return False
+
 
 
 
