@@ -16,6 +16,13 @@ def is_repeating(substring: str) -> bool:
     char_count[char] = 1
     return False
 
+def get_substring(s: str) -> List[str]:
+    substrings = []
+    n = len(s)
+    for i in range(n):
+        for j in range(i+1, n+1):
+            substrings.append(s[i:j])
+    return substrings
 
 
 
