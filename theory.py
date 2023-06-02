@@ -1,3 +1,16 @@
+from typing import List
+
+def length_of_longest_substring(s: str) -> int:
+    substrings = get_substrings(s)
+    longest_length = 0
+    for substring in strings:
+        if not is_repeating(substring):
+            longest_length = max(longest_length, len(substring))
+    return longest_length
+
+
+
+
 # reverse_works takes a string 's' as input
 # and returns the modified string with the words reversed
 def reverse_words(s: str) -> str:
