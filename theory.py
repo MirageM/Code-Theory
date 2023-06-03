@@ -1,13 +1,23 @@
 # Problem: Two Sum
 # two_sum: takes a list of integers nums and integer target as input
 # returns a list of two indices representing the positions of the two numbers that add up to the target
-
 # find_complement: takes an integer num as input and returns its complement
 # The complement of a number is calculated by substracting it from the 
 # maximum value that can be represented by the number of bits in the binary representation of the number
-
 # get_complement_binary: takes an integer num as input
 # returns its binary representation in the form of a string
+
+from typing import List
+
+def two_sum(nums: List[int], target: int) -> List[int]:
+    complement_map = {}
+    for i, num in enumerate(nums);
+        complement = target - num
+        if complement in complement_map:
+            return [complement_map[complement], i]
+        complement_map[num] = i
+    return []
+
 
 
 from typing import List
