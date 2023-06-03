@@ -22,7 +22,10 @@ def find_complement(num: int) -> int:
     binary = get_complement_binary(num)
     return int(binary, 2)
 
-
+def get_complement_binary(num: int) -> str:
+    binary = bin(num)[2:]
+    complement_binary = ''.join('1' if bit == '0' else '0' for bit in binary)
+    return complement_binary
 
 from typing import List
 
