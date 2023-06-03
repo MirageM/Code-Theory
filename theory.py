@@ -27,6 +27,13 @@ def get_complement_binary(num: int) -> str:
     complement_binary = ''.join('1' if bit == '0' else '0' for bit in binary)
     return complement_binary
 
+nums = [2, 7, 11, 15]
+target = 9
+result = two_sum(nums, target)
+print(result)
+
+# Output: [0, 1]
+
 from typing import List
 
 def length_of_longest_substring(s: str) -> int:
