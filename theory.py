@@ -18,6 +18,10 @@ def two_sum(nums: List[int], target: int) -> List[int]:
         complement_map[num] = i
     return []
 
+def find_complement(num: int) -> int:
+    binary = get_complement_binary(num)
+    return int(binary, 2)
+
 
 
 from typing import List
