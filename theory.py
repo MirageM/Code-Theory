@@ -1,5 +1,5 @@
 # Functions related to DNS message/(Domain Name Systems Message):
-from typing import AnyStr
+from typing import Any
 
 def create_dns_message(query: str) -> dict:
     message = {
@@ -17,6 +17,8 @@ def decode_dns_message(data: bytes) -> dict:
     decoded_message = {} # Placeholder
     return decoded_message
 
+def get_dict_value(dictionary: dict, key: str, default = None) -> Any:
+    return dictionary.get(key, default)
 
 
 # Problem: Two Sum
