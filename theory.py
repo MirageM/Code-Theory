@@ -9,8 +9,14 @@ def create_dns_message(query: str) -> dict:
 
 def encode_dns_message(message: dict) -> bytes:
     # Encoding logic for DNS message dictionary to bytes
-    encoded_data = b''
+    encoded_data = b'' # Placeholder
     return encoded_data
+
+def decode_dns_message(data: bytes) -> dict:
+    # Decoding logic for bytes to DNS message dictionary
+    decoded_message = {} # Placeholder
+    return decoded_message
+
 
 
 # Problem: Two Sum
