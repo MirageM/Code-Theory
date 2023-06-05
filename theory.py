@@ -11,6 +11,11 @@ def generate_fibonacci(n: int) -> List[int]:
             fibonacci_sequence.append(fibonacci_sequence[i-1] + fibonacci_sequence[i-2])
     return fibonacci_sequence
 
+def get_fibonacci_recursive(n: int) -> int:
+    if n < 2:
+        return n
+    return get_fibonacci_recursive(n-1) + get_fibonacci_recursive(n-2)
+
 
 
 # Functions related to DNS message/(Domain Name Systems Message):
