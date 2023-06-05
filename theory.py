@@ -1,3 +1,14 @@
+# Functions related to DNS message/(Domain Name Systems Message):
+from typing import AnyStr
+
+def create_dns_message(query: str) -> dict:
+    message {
+        'query': query
+    }
+    return message
+
+
+
 # Problem: Two Sum
 # two_sum: takes a list of integers nums and integer target as input
 # returns a list of two indices representing the positions of the two numbers that add up to the target
