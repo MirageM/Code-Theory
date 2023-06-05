@@ -2,11 +2,15 @@
 from typing import AnyStr
 
 def create_dns_message(query: str) -> dict:
-    message {
+    message = {
         'query': query
     }
     return message
 
+def encode_dns_message(message: dict) -> bytes:
+    # Encoding logic for DNS message dictionary to bytes
+    encoded_data = b''
+    return encoded_data
 
 
 # Problem: Two Sum
