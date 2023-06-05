@@ -1,3 +1,18 @@
+# Fibonacci Sequence
+
+from typing import List
+
+def generate_fibonacci(n: int) -> List[int]:
+    fibonacci_sequence = []
+    for i in range(n):
+        if i < 2:
+            fibonacci_sequence.append(i)
+        else:
+            fibonacci_sequence.append(fibonacci_sequence[i-1] + fibonacci_sequence[i-2])
+    return fibonacci_sequence
+
+
+
 # Functions related to DNS message/(Domain Name Systems Message):
 from typing import Any
 
