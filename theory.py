@@ -1,3 +1,10 @@
+# Palindrome
+
+def is_palindrome(word: str) -> bool:
+    word = remove_whitespace(word)
+    reverse = reverse_string(word)
+    return word == reverse
+
 # Fibonacci Sequence
 
 from typing import List
