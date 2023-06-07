@@ -17,6 +17,11 @@ def generate_primes(limit):
             primes.append(num)
     return primes
 
+def next_prime(n):
+    num = n + 1
+    while not is_prime(num):
+        num += 1
+    return num
 
 # Palindrome
 
