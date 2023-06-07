@@ -8,6 +8,9 @@ def is_palindrome(word: str) -> bool:
 def reverse_string(word: str) -> str:
     return word[::-1]
 
+def remove_whitespace(word: str) -> str:
+    return ''.join(word.split())
+
 # Fibonacci Sequence
 
 from typing import List
