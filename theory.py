@@ -5,6 +5,9 @@ def is_palindrome(word: str) -> bool:
     reverse = reverse_string(word)
     return word == reverse
 
+def reverse_string(word: str) -> str:
+    return word[::-1]
+
 # Fibonacci Sequence
 
 from typing import List
