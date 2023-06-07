@@ -10,6 +10,14 @@ def is_prime(n):
             return False
     return True
 
+def generate_primes(limit):
+    primes = []
+    for num in range(2, limit):
+        if is_prime(num):
+            primes.append(num)
+    return primes
+
+
 # Palindrome
 
 def is_palindrome(word: str) -> bool:
