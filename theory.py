@@ -9,6 +9,13 @@ def count_words(text):
     word_count = Counter(words)
     return word_count
 
+def get_most_common_words(text, n):
+    word_count = count_words(text)
+    most_common = word_count.most_common(n)
+    most_common_words = [word for word, _ in most_common]
+    return most_common_words
+
+
 # Prime Numbers
 
 from typing import List
