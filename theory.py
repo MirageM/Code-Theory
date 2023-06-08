@@ -1,3 +1,14 @@
+# Word Count
+import string
+from collections import Counter
+from typing import List
+
+def count_words(text):
+    text = remove_punctuation(text)
+    words = text.lower().split()
+    word_count = Counter(words)
+    return word_count
+
 # Prime Numbers
 
 from typing import List
