@@ -15,6 +15,10 @@ def get_most_common_words(text, n):
     most_common_words = [word for word, _ in most_common]
     return most_common_words
 
+def remove_punctuation(text):
+    translator = str.maketrans("", "", string.punctuation)
+    return text.translate(translator)
+
 
 # Prime Numbers
 
