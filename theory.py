@@ -6,7 +6,13 @@ def celsius_to_fahrenheit(celsius):
 def fahrenheit_to_celsius(fahrenheit):
     return (fahrenheit - 32) * 5/9
 
-
+def convert_temperature(temperature, scale):
+    if scale.lower() == "c":
+        return celsius_to_fahrenheit(temperature)
+    elif scale.lower() == "f":
+        return fahrenheit_to_celsius(temperature)
+    else:
+        raise ValueError("Invalid temperature scale. Supported scales: 'C' (Celsius) and 'F' (Fahrenheit.")
 
 # Word Count
 import string
