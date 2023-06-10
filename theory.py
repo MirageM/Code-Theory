@@ -1,3 +1,10 @@
+# Calculate Area and Perimeter
+import math
+
+def calculate_rectangle_area(width, height):
+    return width * height
+
+
 # Temperature Conversion
 
 def celsius_to_fahrenheit(celsius):
