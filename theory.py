@@ -4,6 +4,8 @@ import math
 def calculate_rectangle_area(width, height):
     return width * height
 
+def calculate_rectangle_perimeter(width, height):
+    return 2 * (width + height)
 
 # Temperature Conversion
 
