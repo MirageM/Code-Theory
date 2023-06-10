@@ -7,6 +7,9 @@ def calculate_rectangle_area(width, height):
 def calculate_rectangle_perimeter(width, height):
     return 2 * (width + height)
 
+def calculate_circle_area(radius):
+    return math.pi * radius ** 2
+
 # Temperature Conversion
 
 def celsius_to_fahrenheit(celsius):
