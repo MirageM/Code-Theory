@@ -8,6 +8,14 @@ def is_prime(number):
             return False
     return True
 
+def generate_prime(limit):
+    primes = []
+    for number in range(2, limit + 1):
+        if is_prime(number):
+            primes.append(number)
+    return primes
+
+
 def reverse_string(text):
     return text[::-1]
 
