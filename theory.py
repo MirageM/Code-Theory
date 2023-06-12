@@ -7,6 +7,14 @@ def is_palindrome(text):
 def is_palindrome2(text):
     return text == text[::-1]
 
+def count_vowels(text):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
+
 # Calculate Area and Perimeter
 import math
 
