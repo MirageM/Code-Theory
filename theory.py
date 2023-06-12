@@ -15,6 +15,9 @@ def generate_prime(limit):
             primes.append(number)
     return primes
 
+def count_primes(limit):
+    primes = generate_primes(limit)
+    return len(primes)
 
 def reverse_string(text):
     return text[::-1]
