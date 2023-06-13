@@ -6,6 +6,10 @@ def write_to_file(file_path, content):
     with open(file_path, 'w') as file:
         file.write(content)
 
+def file_exists(file_path):
+    import os
+    return os.path.exists(file_path)
+
 from typing import List
 
 def is_prime(number):
