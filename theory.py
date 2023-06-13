@@ -1,3 +1,7 @@
+def read_file(file_path):
+    with open(file_path, 'r') as file:
+        return file.read()
+
 from typing import List
 
 def is_prime(number):
