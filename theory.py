@@ -30,6 +30,16 @@ def selection_sort(array):
             array[i], array[min_idx] = array[min_idx], array[i]
     return array
 
+array = [5, 3, 8, 12, 1, 6]
+
+bubble_sorted = bubble_sort(array.copy())
+insertion_sorted = insertion_sort(array.copy())
+selection_sorted = selection_sort(array.copy())
+
+print(bubble_sorted)
+print(insertion_sorted)
+print(selection_sorted)
+
 def read_file(file_path):
     with open(file_path, 'r') as file:
         return file.read()
