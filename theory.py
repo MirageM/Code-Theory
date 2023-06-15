@@ -7,6 +7,14 @@ def generate_fibonacci(n):
         sequence.append(next_number)
     return sequence
 
+def is_fibonacci(number):
+    if number == 0 or number == 1:
+        return True
+    a, b = 0, 1
+    while b < number:
+        a, b = b, a + b
+    return b == number
+
 from typing import List
 
 def bubble_sort(array):
