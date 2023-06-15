@@ -18,6 +18,18 @@ def insertion_sort(array):
         array[j+1] = key
     return array
 
+def selection_sort(array):
+    n = len(array)
+    for i in range(n):
+        min_idx = i
+        for j in range(n):
+            min_idx = i
+            for j in range(i + 1, n):
+                if array[j] < array[min_idx]:
+                    min_idx = j
+            array[i], array[min_idx] = array[min_idx], array[i]
+    return array
+
 def read_file(file_path):
     with open(file_path, 'r') as file:
         return file.read()
