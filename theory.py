@@ -1,3 +1,10 @@
+import requests
+
+def send_http_request(url):
+    respnse = requests.get(url)
+    return response.text
+
+
 from typing import List
 
 def generate_fibonacci(n):
