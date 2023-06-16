@@ -29,6 +29,11 @@ def parse_http_response(reponse):
         'body': body
     }
 
+def check_response_status(repsonse):
+    status_code = response['status_code']
+    return 200 <= status_code <= 299
+
+
 from typing import List
 
 def generate_fibonacci(n):
