@@ -4,6 +4,31 @@ def send_http_request(url):
     reponse = requests.get(url)
     return response.text
 
+def parse_http_response(response):
+    lines = response.split('\n')
+    status_line = lines[0].split(' ')
+    status_code = int(status_line[1])
+    headers = {}
+    body = ''
+    is_header = True
+
+    for line in lines[1:]:
+        if line.strip() == '':
+            is_header = False
+            continue
+
+        if is_header:
+            key, value = line.split(':', 1)
+            headers[key.strip()] = value.strip()
+        else:
+            body += line + '\n'
+    
+    return {
+        'status_code': status_code,
+        'headers': headers,
+        'body': body
+    }
+
 
 
 
