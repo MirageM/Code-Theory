@@ -1,6 +1,15 @@
 import requests
 
 def send_http_request(url):
+    reponse = requests.get(url)
+    return response.text
+
+
+
+
+import requests
+
+def send_http_request(url):
     respnse = requests.get(url)
     return response.text
 
