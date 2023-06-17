@@ -29,7 +29,9 @@ def parse_http_response(response):
         'body': body
     }
 
-
+def check_response_status(response):
+    status_code = response['status_code']
+    return 200 <= status_code <= 299
 
 
 import requests
