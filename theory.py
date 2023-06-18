@@ -5,6 +5,13 @@ def fetch_webpage(url):
     response = requests.get(url)
     return response.text
 
+def extract_title(content):
+    soup = BeautifulSoup(content, 'html.parser')
+    title = soup.find('title')
+    if title:
+        return title.string.strip()
+    else:
+        return ''
 
 import requests
 
