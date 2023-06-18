@@ -13,6 +13,19 @@ def extract_title(content):
     else:
         return ''
 
+def extract_metadata(content):
+    soup = BeautifulSoup(content, 'html.parser')
+    meta_tags = soup.find_all('meta')
+    metadata = {}
+
+    for meta in meta_tags:
+        name = meta.get('name', '').lower()
+        if name == 'description':
+            metadata['description'] = meta.get('content', '')
+        elif name == 'keywords':
+            metadata['keywords'] = meta.get('content', '')
+    return metadata
+
 import requests
 
 def send_http_request(url):
