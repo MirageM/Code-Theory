@@ -1,4 +1,12 @@
 import requests
+from bs4 import BeautifulSoup
+
+def fetch_webpage(url):
+    response = requests.get(url)
+    return response.text
+
+
+import requests
 
 def send_http_request(url):
     reponse = requests.get(url)
