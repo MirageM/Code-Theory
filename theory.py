@@ -48,8 +48,13 @@ def start_client():
     client_socket.close()
 
 # Start the server and client in separate threads
-if __name__ = '__main__':
+if __name__ == '__main__':
     import threading
+    server_thread = threading.Thread(target=start_server)
+    server_thread.start()
+
+    client_thread = threading.Thread(target=start_client)
+    client_thread.start()
 
 
 
