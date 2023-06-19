@@ -1,3 +1,37 @@
+import socket
+
+# Server
+def start_server():
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server_address = ('localhost', 8080)
+    server_socket.bind(server_address)
+    server_socket.listen(1)
+    print("Server listening on {}:{}".format(*server_address))
+
+    while True:
+        print("Waiting for a client to connect...")
+        client_socket, client_address = server_socket.accept()
+        print("Client connected from {}:{}".format(*client_address))
+
+        while True:
+            data = client_socket.recv(1024)
+            if not data:
+                break
+            print("Received data from client: {}".format(data.decode()))
+
+            # Process the received data
+
+            response = "Response from server"
+            client_socket.sendall(response.encode())
+        
+        print("Client disconnected")
+        client_socket.close()
+
+
+
+
+
+
 from typing import List
 
 def is_prime(num):
