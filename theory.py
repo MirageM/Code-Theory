@@ -27,7 +27,29 @@ def start_server():
         print("Client disconnected")
         client_socket.close()
 
+# Client
+def start_client():
+    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server_address = ('localhost', 8080)
+    client_socket.connect(server_address)
+    print("Connected to server {}:{}".format(*server_address))
 
+    while True:
+        message = input("Enter a message to send (or 'q' to quit): ")
+        if message == 'q':
+            break
+
+        client_socket.sendall(message.encode())
+
+        response = client_socket.recv(1024)
+        print("Received response from server: {}".format(response.decode()))
+
+    print("Closing the connection")
+    client_socket.close()
+
+# Start the server and client in separate threads
+if __name__ = '__main__':
+    import threading
 
 
 
