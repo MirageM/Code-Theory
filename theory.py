@@ -1,3 +1,30 @@
+import threading
+
+# Function to be executed in a separate thread
+def print_numbers():
+    for i in range(1, 6):
+        print(f"Number: {i}")
+
+# Function to be executed in a separate thread
+def print_letters():
+    for letter in ['a', 'b', 'c', 'd', 'e']:
+        print(f"Letter: {letter}")
+
+# Create thread objects
+thread1 = threading.Thread(target=print_numbers)
+thread2 = threading.Thread(target=print_letters)
+
+# Start the threads
+thread1.start()
+thread2.start()
+
+# Wait for threads to be finished
+thread1.join()
+thread2.join()
+
+print("Threads execution complete")
+
+
 import requests
 from bs4 import BeautifulSoup
 
