@@ -1,3 +1,44 @@
+import socket
+
+def send_data(destination_ip, destination_port, data):
+    # Send data to the specified destination IP and port using UDP.
+    try:
+        # Create a socket object
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+        # Send the data to the destination
+        sock.sendto(data.encode(), (destination_ip, destination_port))
+        print(f"Data send to {destination_ip}:{destination_port}")
+    
+    except socket.error as e:
+        print(f"Error occured while sneding data: {str(e)}")
+    
+    finally:
+        sock.close()
+
+def receive_data(listen_ip, listen_port):
+    # Listen for incoming data on the specified IP and port using UDP
+    try:
+        # Create socket object
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        print(f"Listening for incoming data on {listen_ip}:{listen_port}")
+
+        # Receive and print incoming data
+        while True:
+            data, address = socket.recvfrom(1024)
+            print(f"Received data from {address[0]}:{address[1]} - {data.decode()}")
+        
+    except socket.error as e:
+        print(f"Error occured while receiving data: {str(e)}")
+    
+    finally:
+        sock.close()
+        
+
+
+
+
+
 def calculate_area(radius):
     area = 3.14159 * radius * 2
     return area
