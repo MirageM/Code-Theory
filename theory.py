@@ -33,8 +33,18 @@ def receive_data(listen_ip, listen_port):
     
     finally:
         sock.close()
-        
 
+# Example usage
+destination_ip = "127.0.0.1"
+destination_port = 12345
+data_to_send = "Hello, receiver!"
+
+send_data(destination_ip, destination_port, data_to_send)
+
+listen_ip = "0.0.0.0"
+listen_port = 12345
+
+receive_data(listen_ip, listen_port)
 
 
 
