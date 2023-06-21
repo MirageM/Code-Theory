@@ -1,6 +1,24 @@
 import socket
 
 def send_data(destination_ip, destination_port, data):
+    try:
+        # Create a socket object
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+        # Send the data to the destination
+        sock.sendto(data.encode(), (destination_ip, destination_port))
+        print(f"data send to {destination_port}:{destination_ip}")
+    
+    except socket.error as e:
+        print(f"Error occured while sending data: {str(e)}")
+    
+    finally:
+        sock.close()
+
+
+import socket
+
+def send_data(destination_ip, destination_port, data):
     # Send data to the specified destination IP and port using UDP.
     try:
         # Create a socket object
