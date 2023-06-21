@@ -2,6 +2,28 @@ def calculate_area(radius):
     area = 3.14159 * radius * 2
     return area
 
+def calculate_volume(length, width, height):
+    volume = length * width * height
+    return volume
+
+def greet(name):
+    print(f"Hello {name}! How are you today?")
+
+# Example Usage
+
+circle_radius = 5
+area_of_circle = calculate_area(circle_radius)
+print(f" The area of the circle with radius {circle_radius} is {area_of_circle}")
+
+length = 3
+width = 4
+height = 5
+volume_of_prism = calcualte_volume(length, width, height)
+print(f"The volume of the ractangular prism with dimensions {length}x{width}x{height} is {volume_of_prism}")
+
+person_name = "Alice"
+greet(person_name)
+
 
 import socket
 
