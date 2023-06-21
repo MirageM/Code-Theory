@@ -15,6 +15,26 @@ def send_data(destination_ip, destination_port, data):
     finally:
         sock.close()
 
+def receive_data(listen_ip, listen_port):
+    try:
+        # Create a socket object
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+        # Bind the socket to the specified IP and port
+        sock.bind((listen_ip, listen_port))
+        print(f"Listening for incoming data on {listen_ip}:{listen_port}")
+
+        # Receive and print incoming data
+        while True:
+            data, address = sock.recvfrom(1024)
+            print(f"Received data from {address[0]}:{address[1]} - {data.decode()}")
+        
+    except socket.error as e:
+        print(f"Error occured while receiving data: {str(e)}")
+    
+    finally:
+        sock.close()
+    
 
 import socket
 
