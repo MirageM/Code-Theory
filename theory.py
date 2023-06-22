@@ -42,6 +42,22 @@ def find_maximum_subarray(nums):
     max_subarray = nums[start:end + 1]
     return max_subarray, max_sum
 
+# Example usage
+
+# Find prime numbers up to 100
+prime_numbers = find_prime_numbers(100)
+print("Prime numbers up to 100:", prime_numbers)
+
+# Check if a string is a palindrome
+input_string = "A man, a plan, a canal: Panama"
+is_palindrome_result = is_palindrome(input_string)
+print(f"'{input_string}' is a palindrome: {is_palindrome_result}")
+
+# Find the maximum subarray in a list of integers
+nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+max_subarray, max_sum = find_maximum_subarray(nums)
+print(f"Maximum subarray: {max_subarray}")
+print(f"Sum of maximum subarray: {max_sum}")
 
 import socket
 
