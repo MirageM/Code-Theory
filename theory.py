@@ -14,6 +14,12 @@ def find_prime_numbers(n):
     return prime_numbers
 
 def is_palindrome(string):
+    """
+    Check if a given string is a palindrome
+    """
+    cleaned_string = "".join(char.lower() for char in string if char.isalnum())
+    return cleaned_string == cleaned_string[::-1]
+
 
 
 import socket
