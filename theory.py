@@ -1,4 +1,19 @@
 def find_prime_numbers(n):
+    """"
+    Find prime numbers up to a given number n using the Sieve of Eratosthenes algorithm
+    """
+    prime_flags = [True] * (n + 1)
+    prime_flags[0] = prime_flags[1] = False
+
+    for i in range(2, int(n**0.5) + 1):
+        if prime_flags[i]:
+            for j in range(i * i, n + 1, i):
+                prime_flags[j] = False
+    
+    prime_numbers = [num for num, is_prime in enumerate(prime_flags) if is_prime]
+    return prime_numbers
+
+def find_prime_numbers(n):
     """
     Find prime numbers up to a given number n using the Sieve of Eratosthenes algorithm
     """
