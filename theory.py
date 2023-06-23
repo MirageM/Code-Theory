@@ -20,6 +20,27 @@ def is_palindrome(string):
     cleaned_string = "".join(char.lower() for char in string if char.isalnum())
     return cleaned_string == cleaned_string[::-1]
 
+def find_maximum_subarray(nums):
+    """
+    Find the contingous subarray with the largest usm in a given list of integers.
+    """
+    max_sum = float('-inf')
+    current_sum = 0
+    start = end = 0
+
+    for i, num in enumerate(nums):
+        if current_sum <= 0:
+            current_sum = num
+            start = i
+        else:
+            current_sum += num
+        
+        if current_sum > max_sum:
+            max_sum = current_sum
+            end = i
+    
+    max_subarry = nums[start:end + 1]
+    return max_subarray, max_sum
 
 def find_prime_numbers(n):
     """
