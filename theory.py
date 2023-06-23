@@ -13,6 +13,14 @@ def find_prime_numbers(n):
     prime_numbers = [num for num, is_prime in enumerate(prime_flags) if is_prime]
     return prime_numbers
 
+def is_palindrome(string):
+    """
+    Check if a given string is a palindrome
+    """
+    cleaned_string = "".join(char.lower() for char in string if char.isalnum())
+    return cleaned_string == cleaned_string[::-1]
+
+
 def find_prime_numbers(n):
     """
     Find prime numbers up to a given number n using the Sieve of Eratosthenes algorithm
