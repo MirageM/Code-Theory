@@ -46,7 +46,21 @@ def generate_password(length=8):
      password = ''.join(random.choice(characters) for _ in range(length))
      return password
 
+# Example Usage
 
+# Calculate the Fibonacci sequence up to the 10th number
+fibonacci_sequence = calculate_fibonacci(10)
+print("Fibonacci sequence:", fibonacci_sequence)
+
+# Find the longest common subsequence between two string
+string1 = "abcdaf"
+string2 = " acbcf"
+lcs = find_longest_common_subsequence(string1, string2)
+print(f"Longest common subsequence of '{string1}' and '{string2}':", lcs)
+
+# Generate a random password of length 12
+password = generate_password(12)
+print("Generated password:", password)
 
 
 def find_prime_numbers(n):
