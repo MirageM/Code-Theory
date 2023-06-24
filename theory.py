@@ -1,3 +1,20 @@
+def calculate_fibonacci(n):
+    if n <= 0:
+        return []
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
+    else:
+        fib_sequence = calculate_fibonacci(n -1)
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+        return fib_sequence
+
+
+
+
+
+
 def find_prime_numbers(n):
     """"
     Find prime numbers up to a given number n using the Sieve of Eratosthenes algorithm
