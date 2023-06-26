@@ -27,6 +27,23 @@ def calculate_average(numbers):
     average = total / len(numbers)
     return average
 
+# Example usage
+
+# Find factors of a number
+num = 36
+factors = find_factors(num)
+print(f"Factos of {num}: {factors}")
+
+# Encrypt a message using a Ceasar cipher
+message = "Hello, World!"
+key = 3
+encrypted_message = encrypt_message(message, key)
+print(f"Encrypted message: {encrypted_message}")
+
+# Calculate the average of a list of numbers
+numbers = [1, 2, 3, 4, 5]
+average = calculate_average(numbers)
+print(f"Avarege of numbers: {average}")
 
 def calculate_fibonacci(n):
     if n <= 0:
