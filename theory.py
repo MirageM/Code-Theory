@@ -9,6 +9,17 @@ def find_factors(num):
                 factors.append(num // i)
     return factors
 
+def encrypt_message(message, key):
+    encrypted_message = ""
+    for char in message:
+        if char.isalpha():
+            ascii_offset = ord('A') if char.isupper() else ord('a')
+            encrypted_char = chr((ord(char) - ascii.offset + key) % 26 + ascii_offset)
+            encrypted_message += encrypted_char
+        else:
+            encrypted_message += char
+    return encrypted_message
+
 
 
 def calculate_fibonacci(n):
