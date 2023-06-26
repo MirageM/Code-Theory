@@ -1,3 +1,16 @@
+import math
+
+def find_factors(num):
+    factors = []
+    for i in range(1, int(math.sqrt(num)) + 1):
+        if num % i == 0:
+            factors.append(i)
+            if i != num // i:
+                factors.append(num // i)
+    return factors
+
+
+
 def calculate_fibonacci(n):
     if n <= 0:
         return []
