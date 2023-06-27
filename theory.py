@@ -12,6 +12,12 @@ def generate_prime_numbers(n):
     primes = [num for num, is_prime in enumerate(sieve) if is_prime]
     return primes
 
+def find_palindrome(words):
+    palindromes = []
+    for word in words:
+        if word.lower() == word.lower()[::-1]:
+            palindromes.append(word)
+    return palindromes
 
 import math
 
