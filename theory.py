@@ -13,6 +13,22 @@ def find_even_numbers(numbers):
     return even_numbers
 
 
+# Calculate the factorial of a number
+n = 5
+factorial = calculate_factorial(n)
+print("Factorial of", n, ":", factorial)
+
+# Check if a word is a palindrome
+word = "racecar"
+is_palindrome_result = is_palindrome(word)
+print(word, "is a palindrome: ", is_palindrome_result)
+
+# Find even numbers in a list
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = find_even_numbers(numbers)
+print("Even numbers:", even_numbers)
+
+
 import math
 
 def generate_prime_numbers(n):
