@@ -19,6 +19,12 @@ def find_palindrome(words):
             palindromes.append(word)
     return palindromes
 
+def calculate_harmonic_mean(numbers):
+    reciprocal_sum = sum(1 / num for num in numbers)
+    harmonic_mean = len(numbers) / reciprocal_sum 
+    return harmonic_mean
+
+
 import math
 
 def find_factors(num):
