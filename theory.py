@@ -1,3 +1,28 @@
+def analyze_text(text):
+    word_count = len(text.split())
+    sentence_count = text.count('.') + text.count('!') + text.count('?')
+    character_count = len(text.replace(" ", "").replace("\n",""))
+    unique_words = set(text.lower().split())
+
+    word_frequency = {}
+    for word in text.lower().split():
+        if word not in word_frequency:
+            word_frequency[word] = 0
+        word_frequency[word] += 1
+    
+    most_common_words = sorted(word_frequency, key=word_frequency.get, reverse=True)[:5]
+
+    return {
+        "word_count": word_count,
+        "sentence_count": sentence_count,
+        "character_count": character_count,
+        "unique_words": unique_words,
+        "word_frequency": word_frequency,
+        "most_common_words": most_common_words
+    }
+
+
+
 def calculate_factorial(n):
     if n == 0:
         return 1
