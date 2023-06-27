@@ -1,5 +1,20 @@
 import math
 
+def generate_prime_numbers(n):
+    primes = []
+    sieve = [True] * (n + 1)
+    sieve[0] = sieve[1] = False
+
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if sieve[i]:
+            for j in range(i * i, n + 1, i):
+                sieve[j] = False
+    primes = [num for num, is_prime in enumerate(sieve) if is_prime]
+    return primes
+
+
+import math
+
 def find_factors(num):
     factors = []
     for i in range(1, int(math.sqrt(num)) + 1):
