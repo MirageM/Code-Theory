@@ -1,3 +1,18 @@
+def calculate_factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * calculate_factorial(n - 1)
+
+def is_palindrome(word):
+    reversed_word = word[::-1]
+    return word.lower() == reversed_word.lower()
+
+def find_even_numbers(numbers):
+    even_numbers = [num for num in numbers if num % 2 == 0]
+    return even_numbers
+
+
 import math
 
 def generate_prime_numbers(n):
