@@ -12,7 +12,7 @@ def generate_prime_numbers(n):
     primes = [num for num, is_prime in enumerate(sieve) if is_prime]
     return primes
 
-def find_palindrome(words):
+def find_palindromes(words):
     palindromes = []
     for word in words:
         if word.lower() == word.lower()[::-1]:
@@ -23,6 +23,23 @@ def calculate_harmonic_mean(numbers):
     reciprocal_sum = sum(1 / num for num in numbers)
     harmonic_mean = len(numbers) / reciprocal_sum 
     return harmonic_mean
+
+# Example Usage
+
+# Generate prime numbers up to 20
+n = 20
+prime_numbers = generate_prime_numbers(n)
+print("Prime numbers up to", n, ":", prime_numbers)
+
+# Find palindrome words in a list
+words = ["level", "python", "madam", "hello"]
+palindromic_words = find_palindromes(words)
+print("Palindromic words:", palindromic_words)
+
+# Calculate the harmonic mean of a list of numbers
+numbers = [2, 4, 6, 8, 10]
+harmonic_mean = calculate_harmonic_mean(numbers)
+print("Harmonic mean of numbers:", harmonic_mean)
 
 
 import math
