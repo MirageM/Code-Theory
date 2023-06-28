@@ -1,3 +1,16 @@
+def calculate_stock_portfolio(portfolio):
+    # Calculate the total value of a stock portfolio
+    total_value = 0.0
+    for stock in portfolio:
+        symbol = stock["symbol"]
+        quantity = stock["quanitity"]
+        price = get_stock_price(symbol)
+        value = quantity * price
+        total_value += value
+    
+    return total_value
+
+
 def analyze_text(text):
     word_count = len(text.split())
     sentence_count = text.count('.') + text.count('!') + text.count('?')
