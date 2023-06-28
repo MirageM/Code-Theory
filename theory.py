@@ -10,6 +10,12 @@ def calculate_stock_portfolio(portfolio):
     
     return total_value
 
+def get_stock_price(symbol):
+    # Retrieve the current price of a stock
+    # This is a placeholder function for demonstration purposes
+    # Return a random price between 50 and 200
+    import random
+    return random.uniform(50, 200)
 
 def analyze_text(text):
     word_count = len(text.split())
