@@ -20,7 +20,17 @@ def get_stock_price(symbol):
 def display_portfolio_value(portfolio_value):
     # Display the total value of a stock portfolio
     print("Portfolio Value: $ ", round(portfolio_value, 2))
-    
+
+# Example usage
+
+portfolio = [
+    {"symbol": "AAPL", "quantity": 10},
+    {"symbol": "GOOG", "quantity": 5},
+    {"symbol": "MSFT", "quantity": 8}
+]
+
+portfolio_value = calculate_stock_portfolio(portfolio)
+display_portfolio_value(portfolio_value)
 
 def analyze_text(text):
     word_count = len(text.split())
