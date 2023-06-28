@@ -17,6 +17,11 @@ def get_stock_price(symbol):
     import random
     return random.uniform(50, 200)
 
+def display_portfolio_value(portfolio_value):
+    # Display the total value of a stock portfolio
+    print("Portfolio Value: $ ", round(portfolio_value, 2))
+    
+
 def analyze_text(text):
     word_count = len(text.split())
     sentence_count = text.count('.') + text.count('!') + text.count('?')
