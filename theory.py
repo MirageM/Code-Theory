@@ -1,3 +1,19 @@
+import requests
+from bs4 import BeautifulSoup
+import re
+from collections import Counter
+
+def get_webpage(url):
+    # Retrieve the HTML content of a webpage
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.text
+    else:
+        return None
+    
+
+
+
 def calculate_stock_portfolio(portfolio):
     # Calculate the total value of a stock portfolio
     total_value = 0.0
