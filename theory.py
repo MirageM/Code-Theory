@@ -21,6 +21,13 @@ def extract_links(html):
             links.append(href)
         return links
 
+def count_words(html):
+    # Count the frequency of words in an HTML page
+    soup = BeautifulSoup(html, 'html.parser')
+    text = soup.get_text()
+    words = re.findall(r'\b\w+\b', text.lower())
+    word_count = Counter(words)
+    return word_count
 
 def calculate_stock_portfolio(portfolio):
     # Calculate the total value of a stock portfolio
