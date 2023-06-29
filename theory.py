@@ -21,6 +21,23 @@ def extract_links(html):
             links.append(href)
         return links
 
+url = "https://www.google.com"
+webpage = get_webpage(url)
+
+if webpage:
+    links = extract_links(webpage)
+    print("Links found on the webpage:")
+    for link in links:
+        print(link)
+    
+    word_count = count_words(webpage)
+    print("\nWord frequency on the webpage:")
+    for word, count in word_count.most_common(10):
+        print(f"{word}: {count}")
+else:
+    print("Failed to retrieve the webpage.")
+
+
 def count_words(html):
     # Count the frequency of words in an HTML page
     soup = BeautifulSoup(html, 'html.parser')
