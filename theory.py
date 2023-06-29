@@ -11,7 +11,15 @@ def get_webpage(url):
     else:
         return None
     
-
+def extract_links(html):
+    # Extract all the links from an HTML page
+    soup = BeautifulSoup(html, 'html.parser')
+    links = []
+    for link in soup.find_all('a'):
+        href = link.get('href')
+        if href:
+            links.append(href)
+        return links
 
 
 def calculate_stock_portfolio(portfolio):
