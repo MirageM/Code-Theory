@@ -64,7 +64,14 @@ def calculate_sentiment_score(features):
 
     return sentiment_score
 
-
+def classify_sentiment(sentiment_score):
+    # Classify the sentiment based on the sentiment score.
+    if sentiment_score >= 0.5:
+        return "Positive"
+    elif sentiment_score <= -0.5:
+        return "Negative"
+    else:
+        return "Neural"
 
 import requests
 from bs4 import BeautifulSoup
