@@ -56,6 +56,14 @@ def extract_features(text):
 
     return features
 
+def calculate_sentiment_score(features):
+    # Calculate the sentiment score based on the extracted features
+
+    # Perform calculations and assign sentiment score
+    sentiment_score = features["word_count"] * 0.5 + features["average_word_length"] * 0.3
+
+    return sentiment_score
+
 
 
 import requests
