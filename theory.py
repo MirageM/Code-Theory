@@ -41,6 +41,17 @@ def preprocess_text(text):
     return processed_text
 
 
+def extract_features(text):
+    # Extract relevant features from the preprocessed text
+
+    # Tokenize the text into words
+    tokens = nltk.word_tokenize(text)
+
+    # Extract features such as word frequency, word length, etc.
+
+    features = {
+        "w"
+    }
 
 
 
