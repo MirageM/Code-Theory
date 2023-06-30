@@ -50,8 +50,11 @@ def extract_features(text):
     # Extract features such as word frequency, word length, etc.
 
     features = {
-        "w"
+        "word_count": len(tokens),
+        "average_word_length": sum(len(word) for word in tokens) / len(tokens)
     }
+
+    return features
 
 
 
