@@ -37,6 +37,21 @@ def evaluate_model(model, X_test, y_test):
     accuracy = accuracy_score(y_test, y_pred)
     return accuracy
 
+
+# Load the datset
+data = load_data('datacsv')
+
+# Preprocess the data
+X_train, X_test, y_train, y_test = preprocess_data(data)
+
+# Train the model
+model = train_model(X_train, y_train)
+
+# Evaluate the model
+accuracy = evaluate_model(model, X_test, y_test)
+print("Accuracy:", accuracy)
+
+
 def analyze_sentiment(text):
     # Analyze the sentiment of a given text using a sentiment analysis algorithm
 
