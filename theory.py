@@ -31,6 +31,11 @@ def train_model(X_train, y_train):
     model.fit(X_train, y_train)
     return model
 
+def evaluate_model(model, X_test, y_test):
+    # Evaluate the trained model on the test data
+    y_pred = model.predict(X_test)
+    accuracy = accuracy_score(y_test, y_pred)
+    return accuracy
 
 def analyze_sentiment(text):
     # Analyze the sentiment of a given text using a sentiment analysis algorithm
