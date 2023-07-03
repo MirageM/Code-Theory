@@ -31,6 +31,12 @@ def train_model(X_train, y_train):
     model.fit(X_train, y_train)
     return model
 
+def evaluate_model(model, X_test, y_test):
+    # Evaluate the trained model on the test data
+    y_pred = model.predict(X_test)
+    accuracy = accuracy_score(y_test, y_pred)
+    return accuracy
+
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
