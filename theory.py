@@ -10,6 +10,19 @@ def load_data(filepath):
     data = pd.read_csv(filepath)
     return data
 
+
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+
+def load_data(filepath):
+    # Load the dataset from a CSV file
+    data = pd.read_csv(filepath)
+    return data
+
 def preprocess_data(data):
     # Preprocess the dataset by performing feature scaling and splitting into train and test sets
     # Separate features and labels
