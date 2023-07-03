@@ -25,6 +25,12 @@ def preprocess_data(data):
 
     return X_train, X_test, y_train, y_test
 
+def train_model(X_train, y_train):
+    # Train a logistic regression model on the training data
+    model = LogisticRegression()
+    model.fit(X_train, y_train)
+    return model
+
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
