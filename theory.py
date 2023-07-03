@@ -1,3 +1,15 @@
+import threading 
+import time
+
+# Count numbers form 1 to n
+def count_numbers(n):
+    for i in range(1, n+1):
+        print(i)
+        time.sleep(0.5)
+
+
+
+
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
