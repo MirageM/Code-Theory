@@ -12,6 +12,11 @@ def print_message(message):
     print(message)
     time.sleep(0.5)
 
+def print_squre(number):
+    square = number ** 2
+    print(f"The square of {number} is {square}")
+    time.sleep(0.5)
+
 
 
 import numpy as np
