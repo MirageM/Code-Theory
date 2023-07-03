@@ -12,12 +12,29 @@ def print_message(message):
     print(message)
     time.sleep(0.5)
 
-def print_squre(number):
+def print_square(number):
     square = number ** 2
     print(f"The square of {number} is {square}")
     time.sleep(0.5)
 
+# Create and start the threads
+if __name__ == "__main__":
+    # Create the threads
+    thread1 = threading.Thread(target=count_numbers args=(5,))
+    thread2 = threading.Thread(target=print_message, args=("Hello, World"))
+    thread3 = threading.Thread(target=print_square, args=(7,))
 
+    # Start the threads
+    thread1.start()
+    thread2.start()
+    thread3.start()
+
+    # Wait for the threads to finish
+    thread1.join()
+    thread2.join()
+    thread3.join()
+
+    print("All threads finished.")
 
 import numpy as np
 import pandas as pd
