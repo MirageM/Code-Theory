@@ -10,6 +10,20 @@ def load_data(filepath):
     data = pd.read_csv(filepath)
     return data
 
+def preprocess_data(data):
+    # Preprocess the dataset by performing feature scaling and splitting into train and test sets
+    # Separate features and labels
+    X = data.iloc[:, :-1]
+    y = data.iloc[:, -1]
+
+    # Feature scaling
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
+
+    # Split into train and test sets
+    X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
+
+    return X_train, X_test, y_train, y_test
 
 import numpy as np
 import pandas as pd
