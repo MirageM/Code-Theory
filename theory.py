@@ -7,6 +7,10 @@ def count_numbers(n):
         print(i)
         time.sleep(0.5)
 
+# Print a given message
+def print_message(message):
+    print(message)
+    time.sleep(0.5)
 
 
 
