@@ -53,6 +53,9 @@ def perform_analysis(filepath):
 
     return accuracy
 
+filepath = 'data.csv'
+accuracy = perform_analysis(filepath)
+print("Accuracy:", accuracy)
 
 import numpy as np
 import pandas as pd
