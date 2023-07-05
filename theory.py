@@ -1,3 +1,26 @@
+import threading
+import time
+
+# Function to execute in a separate thread
+def task():
+    print("Thread started.")
+    time.sleep(2) # Simulate some time-consuming task
+    print("Thread finished.")
+
+# Create and start the thread
+if __name__ == "__main__":
+    thread = threading.Thread(target=task)
+    thread.start()
+
+    # Continue executing the main thread while the other thread is running
+    print("Main thread continues.")
+
+    # Wait for the thread to finish
+    thread.join()
+
+    print("Main thread finished.")
+
+
 # Vector Addition
 import numpy as np
 
