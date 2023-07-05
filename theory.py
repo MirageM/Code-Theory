@@ -1,3 +1,15 @@
+import numpy as np
+
+# Create two vectors
+vector1 = np.array([1, 2, 3])
+vector2 = np.array([4, 5, 6])
+
+# Perform vector addition
+result = vector1 + vector2
+
+print("Result:", result)
+
+
 import threading 
 import time
 
