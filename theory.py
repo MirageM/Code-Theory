@@ -22,6 +22,17 @@ result = np.dot(vector1, vector2)
 
 print("Result:", result)
 
+# Vector Cross Product
+import numpy as np
+
+# Create two vectors
+vector1 = np.array([1, 2, 3])
+vector2 = np.array([4, 5, 6])
+
+# Perform vector cross product
+result = np.cross(vector1, vector2)
+
+print("Result:", result)
 
 import threading 
 import time
